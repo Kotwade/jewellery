@@ -1,0 +1,42 @@
+.page-header__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.page-header__wrapper label {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__login {
+  display: flex;
+  width: 119px;
+  justify-content: space-between;
+  color: $dark;
+  font-size: 14px;
+  line-height: 21px;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__burger {
+  display: none;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.page-header__cart {
+  display: none;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+  }
+}
