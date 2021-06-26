@@ -1,3 +1,9 @@
+.page-header {
+  @media (max-width: $desktop-width) {
+    background-color: $broun;
+  }
+}
+
 .page-header__wrapper {
   max-width: 1170px;
   margin: 0 auto;
