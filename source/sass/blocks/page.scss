@@ -1,4 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
 .page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   background-color: $white;
   color: $black;
   font-family: "Poppins", "Arial", sans-serif;
@@ -6,4 +23,14 @@
   font-style: normal;
   font-size: 30px;
   line-height: 30px;
+}
+
+.page-body--opened {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page-body--opened .page-header {
+  height: 100vh;
+  overflow: auto;
 }

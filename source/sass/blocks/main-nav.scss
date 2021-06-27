@@ -1,12 +1,41 @@
+.main-nav {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header--opened .main-nav {
+  @media (max-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.page-header--nojs .main-nav {
+  @media (max-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .main-nav label {
   display: none;
 
   @media (max-width: $desktop-width) {
-    display: block;
     margin: 0;
     padding: 0;
     padding-left: 45px;
     padding-right: 45px;
+  }
+}
+
+.page-header--opened .main-nav label {
+  @media (max-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.page-header--nojs .main-nav label {
+  @media (max-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -21,7 +50,15 @@
   margin: 0;
   padding: 0;
   padding-left: 45px;
+}
 
+.page-header--opened .main-nav__menu {
+  @media (max-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.page-header--nojs .main-nav__menu {
   @media (max-width: $desktop-width) {
     display: block;
   }
@@ -36,13 +73,21 @@
 
 .main-nav__login {
   display: none;
+  padding-left: 45px;
   font-size: 18px;
   line-height: 23px;
   text-decoration: none;
   color: $white;
+}
 
+.page-header--opened .main-nav__login {
   @media (max-width: $desktop-width) {
     display: block;
-    padding-left: 45px;
+  }
+}
+
+.page-header--nojs .main-nav__login {
+  @media (max-width: $desktop-width) {
+    display: block;
   }
 }
