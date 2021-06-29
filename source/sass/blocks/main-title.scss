@@ -1,0 +1,53 @@
+.main-title {
+  background-image: url("../img/main-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.main-title__wrapper {
+  background-color: rgba($light-brown, 0.7);
+  padding-top: 195px;
+  padding-bottom: 194px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.main-title__wrapper h3 {
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 38px;
+    line-height: 49px;
+  }
+}
+
+.main-title__wrapper p {
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 38px;
+  line-height: 49px;
+  color: $white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $tablet-width) {
+    font-size: 34px;
+    line-height: 44px;
+  }
+}

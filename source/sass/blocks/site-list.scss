@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 37px;
+  padding-bottom: 19px;
 
   @media (max-width: $desktop-width) {
     display: block;
