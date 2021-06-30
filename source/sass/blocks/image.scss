@@ -1,0 +1,139 @@
+.image {
+  padding-bottom: 132px;
+}
+
+.image h3 {
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  color: $dark;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.image p {
+  font-size: 16px;
+  line-height: 21px;
+  color: $dark;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 70px;
+}
+
+.image__container {
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  @media (max-width: $desktop-width) {
+    max-width: 678px;
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 290px;
+  }
+}
+
+.image__container img {
+  margin-bottom: 34px;
+
+  @media (max-width: $desktop-width) {
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
+}
+
+.image__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 656px;
+
+  @media (max-width: $desktop-width) {
+    max-width: 380px;
+  }
+}
+
+.image__block {
+  display: flex;
+  flex-direction: column;
+  margin-right: 27px;
+
+  @media (max-width: $desktop-width) {
+    margin-right: 16px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 24px;
+  }
+}
+
+.image__box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 487px;
+
+  @media (max-width: $desktop-width) {
+    max-width: 282px;
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 290px;
+  }
+}
+
+.image__block-first {
+  @media (max-width: $desktop-width) {
+    width: 133px;
+    height: 133px;
+  }
+}
+
+.image__block-second {
+  @media (max-width: $desktop-width) {
+    width: 133px;
+    height: 87px;
+  }
+}
+
+.image__model {
+  @media (max-width: $desktop-width) {
+    width: 231px;
+    height: 240px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 133px;
+    height: 247px;
+  }
+}
+
+.image__block-first--hand {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.image__block-first--rings {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.image__block-second--set {
+  @media (max-width: $tablet-width) {
+    margin-right: 24px;
+  }
+}
