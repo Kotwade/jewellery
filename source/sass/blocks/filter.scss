@@ -1,0 +1,7 @@
+.filter {
+  width: 250px;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
