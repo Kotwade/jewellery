@@ -1,0 +1,81 @@
+.faq {
+  padding-bottom: 108px;
+}
+
+.faq h3 {
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  color: $dark;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.faq__container {
+  width: 970px;
+  margin: 0 auto;
+  border: 1px solid $brown;
+
+  @media (max-width: $desktop-width) {
+    width: 678px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+  }
+}
+
+.faq__wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $brown;
+}
+
+.faq__text h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: $dark;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  padding-left: 38px;
+
+  @media (max-width: $desktop-width) {
+    padding-left: 50px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 22px;
+    width: 207px;
+    padding-left: 25px;
+    padding-top: 24px;
+    margin-bottom: 25px;
+  }
+}
+
+.faq__text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: $dark;
+  margin: 0;
+  padding: 0;
+  width: 557px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+
+  @media (max-width: $tablet-width) {
+    width: 230px;
+    padding-left: 25px;
+    padding-bottom: 24px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
