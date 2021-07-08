@@ -1,5 +1,13 @@
 .faq {
-  padding-bottom: 108px;
+  padding-bottom: 136px;
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 101px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 54px;
+  }
 }
 
 .faq h3 {
@@ -12,7 +20,7 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 60px;
+  margin-bottom: 43px;
 }
 
 .faq__container {
@@ -55,7 +63,7 @@
     line-height: 22px;
     width: 207px;
     padding-left: 25px;
-    padding-top: 24px;
+    padding-top: 1px;
     margin-bottom: 25px;
   }
 }
@@ -78,4 +86,8 @@
     font-size: 14px;
     line-height: 20px;
   }
+}
+
+.faq__text--about {
+  display: none;
 }

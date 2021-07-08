@@ -1,5 +1,13 @@
 .image {
-  padding-bottom: 132px;
+  padding-bottom: 96px;
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 44px;
+  }
 }
 
 .image h3 {
@@ -12,7 +20,11 @@
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 19px;
+  }
 }
 
 .image p {
@@ -22,7 +34,11 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 70px;
+  margin-bottom: 65px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 51px;
+  }
 }
 
 .image__container {

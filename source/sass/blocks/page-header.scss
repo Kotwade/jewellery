@@ -24,11 +24,53 @@
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 25px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
 }
 
 .page-header__wrapper label {
+  padding-left: 30px;
+
   @media (max-width: $desktop-width) {
     display: none;
+  }
+}
+
+.page-header__wrapper input {
+  border: none;
+  width: 143px;
+}
+
+.page-header__wrapper input::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: $grey;
+}
+
+.page-header__logo {
+  padding-right: 53px;
+
+  @media (max-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 50px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 21px;
+  }
+}
+
+.page-header__logo img {
+  @media (max-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
   }
 }
 
@@ -55,12 +97,17 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 24px;
+    left: 45px;
     width: 25px;
     height: 20px;
     background-image: url("../img/burger-icon.svg");
     background-repeat: no-repeat;
+
+    @media (max-width: $tablet-width) {
+      top: 17px;
+      left: 15px;
+    }
   }
 
   @media (max-width: $desktop-width) {
@@ -73,5 +120,12 @@
 
   @media (max-width: $desktop-width) {
     display: block;
+    padding-right: 45px;
+    padding-top: 16px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-right: 15px;
+    padding-top: 9px;
   }
 }

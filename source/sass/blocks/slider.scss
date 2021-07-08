@@ -1,6 +1,15 @@
 .slider {
   padding-top: 130px;
-  padding-bottom: 130px;
+  padding-bottom: 148px;
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 84px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 61px;
+    padding-bottom: 30px;
+  }
 }
 
 .slider h3 {

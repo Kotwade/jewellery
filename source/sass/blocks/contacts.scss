@@ -3,10 +3,15 @@
   margin: 0;
   padding: 0;
 
+  @media (max-width: $desktop-width) {
+    margin-top: 46px;
+  }
+
   @media (max-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 162px;
+    margin-top: 6px;
   }
 }
 

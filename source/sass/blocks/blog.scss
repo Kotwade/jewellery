@@ -1,5 +1,9 @@
 .blog {
-  padding-bottom: 130px;
+  padding-bottom: 90px;
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .blog h3 {
@@ -11,7 +15,7 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 19px;
 }
 
 .blog p {
@@ -21,7 +25,11 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 70px;
+  margin-bottom: 65px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .blog__container {
@@ -47,8 +55,13 @@
   display: flex;
   margin-bottom: 30px;
 
+  @media (max-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+
   @media (max-width: $tablet-width) {
     flex-direction: column;
+    margin-bottom: 40px;
   }
 }
 
@@ -67,7 +80,7 @@
 
 .blog__text {
   width: 285px;
-  padding-top: 71px;
+  padding-top: 67px;
   padding-bottom: 47px;
   background-color: $light-grey;
 
@@ -78,9 +91,19 @@
   @media (max-width: $tablet-width) {
     order: 2;
     width: 290px;
-    padding-top: 49px;
+    padding-top: 45px;
     height: 256px;
     padding-bottom: 59px;
+  }
+}
+
+.blog__text--box {
+  @media (max-width: $desktop-width) {
+    padding-top: 84px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 62px;
   }
 }
 
@@ -92,7 +115,7 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 13px;
 }
 
 .blog__text h3 {
@@ -104,7 +127,7 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 37px;
 }
 
 .blog__text p {

@@ -1,11 +1,11 @@
 .site-list {
-  max-width: 493px;
+  max-width: 560px;
   margin: 0 auto;
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  padding-top: 37px;
-  padding-bottom: 19px;
+  flex-wrap: wrap;
+  padding-top: 25px;
+  padding-bottom: 18px;
 
   @media (max-width: $desktop-width) {
     display: block;
@@ -20,6 +20,7 @@
   line-height: 24px;
   color: $dark;
   text-decoration: none;
+  margin-right: 33px;
 
   @media (max-width: $desktop-width) {
     font-size: 24px;
