@@ -43,31 +43,6 @@
   border-bottom: 1px solid $brown;
 }
 
-.faq__text h4 {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 23px;
-  color: $dark;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 20px;
-  padding-top: 50px;
-  padding-left: 38px;
-
-  @media (max-width: $desktop-width) {
-    padding-left: 50px;
-  }
-
-  @media (max-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 22px;
-    width: 207px;
-    padding-left: 25px;
-    padding-top: 1px;
-    margin-bottom: 25px;
-  }
-}
-
 .faq__text p {
   font-weight: 400;
   font-size: 16px;
@@ -86,8 +61,4 @@
     font-size: 14px;
     line-height: 20px;
   }
-}
-
-.faq__text--about {
-  display: none;
 }

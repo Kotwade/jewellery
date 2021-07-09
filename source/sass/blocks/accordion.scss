@@ -1,0 +1,48 @@
+.accordion__toggle {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: $dark;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  padding-left: 38px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    width: 15px;
+    height: 8px;
+    background-image: url("../img/arrow-down-icon.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  @media (max-width: $desktop-width) {
+    padding-left: 50px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 22px;
+    width: 207px;
+    padding-left: 25px;
+    padding-top: 1px;
+    margin-bottom: 25px;
+  }
+}
+
+.accordion__toggle--inactive::after {
+  background-image: url("../img/arrow-up-icon.svg");
+}
+
+.accordion__pane--hidden {
+  display: none;
+}

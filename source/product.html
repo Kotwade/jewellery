@@ -168,7 +168,7 @@
         <span>3</span>
       </div>
     </section>
-    <section class="cart-popup">
+    <section class="cart-popup cart-popup--hidden">
       <h3>The item was added to your cart</h3>
       <div class="cart-popup__container">
         <div class="cart-popup__wrapper">
@@ -183,10 +183,11 @@
           <span>Cart subtotal: $ 115</span>
         </div>
         <div class="cart-popup__buttons">
-          <button class="cart-popup__shopping" type="button">Continue shopping</button>
+          <a class="cart-popup__shopping" href="catalog.html">Continue shopping</a>
           <button class="cart-popup__checkout" type="button">Checkout</button>
         </div>
       </div>
+      <button class="cart-popup__button-cross" type="button"></button>
     </section>
   </main>
   <footer class="page-footer">
@@ -230,6 +231,7 @@
       </ul>
     </div>
   </footer>
+  <div class="overlay overlay--hidden"></div>
   <script src="js/swiper-bundle.js"></script>
   <script src="js/script.js"></script>
 </body>

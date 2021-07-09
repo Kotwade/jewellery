@@ -6,7 +6,9 @@
   top: 372px;
   left: 50%;
   transform: translateX(-50%);
-  display: none;
+  z-index: 30;
+  opacity: 1;
+  visibility: visible;
 
   @media (max-width: $desktop-width) {
     width: 502px;
@@ -16,6 +18,10 @@
     width: 290px;
     height: 519px;
   }
+}
+
+.cart-popup--hidden {
+  display: none;
 }
 
 .cart-popup h3 {
@@ -167,6 +173,7 @@
   color: $dark;
   text-align: center;
   margin-right: 30px;
+  text-decoration: none;
 
   @media (max-width: $desktop-width) {
     width: 206px;
@@ -197,4 +204,17 @@
   @media (max-width: $tablet-width) {
     width: 260px;
   }
+}
+
+.cart-popup__button-cross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/cross-icon.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
