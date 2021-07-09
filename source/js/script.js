@@ -32,45 +32,47 @@ const swiper = new Swiper('.swiper-container', {
 
 //Попапы
 
-var ESC_KEY = 'Escape';
-
 var popup = document.querySelector('.cart-popup');
-var popupOpen = document.querySelector('.info__button');
-var popupClose = popup.querySelector('.cart-popup__button-cross');
-var overlay = document.querySelector('.overlay');
 
-var onPopupEscPress = function (evt) {
-  if (evt.key === ESC_KEY) {
+if (popup) {
+  var ESC_KEY = 'Escape';
+  var popupOpen = document.querySelector('.info__button');
+  var popupClose = popup.querySelector('.cart-popup__button-cross');
+  var overlay = document.querySelector('.overlay');
+
+  var onPopupEscPress = function (evt) {
+    if (evt.key === ESC_KEY) {
+      closePopup();
+    }
+  };
+
+  var openPopup = function () {
+    popup.classList.remove('cart-popup--hidden');
+    overlay.classList.remove('overlay--hidden');
+    pageBody.classList.add('page-body--opened');
+    document.addEventListener('keydown', onPopupEscPress);
+  };
+
+  var closePopup = function () {
+    popup.classList.add('cart-popup--hidden');
+    overlay.classList.add('overlay--hidden');
+    pageBody.classList.remove('page-body--opened');
+    document.removeEventListener('keydown', onPopupEscPress);
+  };
+
+  popupOpen.addEventListener('click', function () {
+    openPopup();
+  });
+
+  popupClose.addEventListener('click', function () {
     closePopup();
-  }
+  });
+
+  overlay.addEventListener('click', function () {
+    popup.classList.add('cart-popup--hidden');
+    overlay.classList.add('overlay--hidden');
+  });
 };
-
-var openPopup = function () {
-  popup.classList.remove('cart-popup--hidden');
-  overlay.classList.remove('overlay--hidden');
-  pageBody.classList.add('page-body--opened');
-  document.addEventListener('keydown', onPopupEscPress);
-};
-
-var closePopup = function () {
-  popup.classList.add('cart-popup--hidden');
-  overlay.classList.add('overlay--hidden');
-  pageBody.classList.remove('page-body--opened');
-  document.removeEventListener('keydown', onPopupEscPress);
-};
-
-popupOpen.addEventListener('click', function () {
-  openPopup();
-});
-
-popupClose.addEventListener('click', function () {
-  closePopup();
-});
-
-overlay.addEventListener('click', function () {
-  popup.classList.add('cart-popup--hidden');
-  overlay.classList.add('overlay--hidden');
-});
 
 // Аккордеон
 
