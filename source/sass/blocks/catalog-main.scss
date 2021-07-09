@@ -4,14 +4,18 @@
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 71px;
 
   @media (max-width: $desktop-width) {
     max-width: 678px;
+    padding-top: 46px;
+    padding-bottom: 78px;
   }
 
   @media (max-width: $tablet-width) {
     max-width: 290px;
+    padding-top: 35px;
+    padding-bottom: 65px;
   }
 }
 
@@ -45,5 +49,9 @@
 
   @media (max-width: $desktop-width) {
     display: block;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 36px;
   }
 }

@@ -1,14 +1,14 @@
 .slider {
   padding-top: 130px;
-  padding-bottom: 148px;
+  padding-bottom: 173px;
 
   @media (max-width: $desktop-width) {
-    padding-bottom: 84px;
+    padding-bottom: 109px;
   }
 
   @media (max-width: $tablet-width) {
     padding-top: 61px;
-    padding-bottom: 30px;
+    padding-bottom: 67px;
   }
 }
 

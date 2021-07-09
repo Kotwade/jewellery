@@ -2,8 +2,12 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 31px;
   align-items: center;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 7px;
+  }
 }
 
 .pagination__scroll {
@@ -23,12 +27,18 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 96px;
+  width: 129px;
   margin: 0;
   padding: 0;
+  padding-right: 32px;
 
   @media (max-width: $tablet-width) {
     margin: 0 auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 137px;
+    padding-right: 0;
   }
 }
 
