@@ -6,8 +6,8 @@
   color: $dark;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
-  padding-top: 50px;
+  margin-bottom: 8px;
+  padding-top: 43px;
   padding-left: 38px;
   background-color: transparent;
   border: none;
@@ -16,10 +16,10 @@
   &::after {
     content: "";
     position: absolute;
-    top: 5px;
-    right: 20px;
-    width: 15px;
-    height: 8px;
+    top: 55px;
+    right: -498px;
+    width: 17px;
+    height: 9px;
     background-image: url("../img/arrow-down-icon.svg");
     background-repeat: no-repeat;
     cursor: pointer;
