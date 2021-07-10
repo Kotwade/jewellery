@@ -147,3 +147,13 @@
     padding-top: 9px;
   }
 }
+
+.page-header__cart-icon {
+  fill: $white;
+  stroke: $dark;
+}
+
+.page-header--opened .page-header__cart-icon {
+  stroke: $white;
+  fill: $brown;
+}

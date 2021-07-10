@@ -45,7 +45,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-right: 0;
-    margin-top: 14px;
+    margin-top: 9px;
   }
 
   @media (max-width: $tablet-width) {
@@ -54,7 +54,7 @@
 }
 
 .info__image img {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   @media (max-width: $desktop-width) {
     object-fit: cover;

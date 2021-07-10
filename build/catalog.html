@@ -15,7 +15,11 @@
         <input type="text" placeholder="Type here to search">
       </label>
       <a class="page-header__logo" href="index.html"><img src="img/logo.svg" width="66" height="66" alt="logo"></a>
-      <a class="page-header__cart" href="#"><img src="img/cart-icon.svg" width="18" height="16"></a>
+      <a class="page-header__cart" href="#">
+        <svg class="page-header__cart-icon" width="20" height="18">
+          <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+        </svg>
+      </a>
       <div class="page-header__login">
         <p>Login</p>
         <p>Cart 0</p>
@@ -54,62 +58,110 @@
       <div class="catalog-main__wrapper">
         <button class="catalog-main__button" type="button">Filter</button>
         <a class="product-item product-item--catalog" href="product.html">
-          <img src="img/double-pearl-earrings.jpg" width="270" height="272">
+          <picture>
+            <source type="image/webp" srcset="img/double-pearl-earrings.webp 1x, img/double-pearl-earrings@2x.webp 2x">
+            <!-- 1x: 270px; 2x: 540px -->
+            <img src="img/double-pearl-earrings.jpg" srcset="img/double-pearl-earrings@2x.jpg 2x" width="270" height="272">
+          </picture>
           <p>Double pearl earrings </p>
           <span>$ 115</span>
         </a>
         <a class="product-item product-item--catalog" href="product.html">
-          <img src="img/black-choker-gold-bead.jpg" width="270" height="272">
+          <picture>
+            <source type="image/webp" srcset="img/black-choker-gold-bead.webp 1x, img/black-choker-gold-bead@2x.webp 2x">
+            <!-- 1x: 270px; 2x: 540px -->
+            <img src="img/black-choker-gold-bead.jpg" srcset="img/black-choker-gold-bead@2x.jpg 2x" width="270" height="272">
+          </picture>
           <p>Choker with gold bead</p>
           <span>$ 55</span>
         </a>
         <a class="product-item product-item--catalog" href="product.html">
-          <img src="img/gold-layered-necklace.jpg" width="270" height="272">
+          <picture>
+            <source type="image/webp" srcset="img/gold-layered-necklace.webp 1x, img/gold-layered-necklace@2x.webp 2x">
+            <!-- 1x: 270px; 2x: 540px -->
+            <img src="img/gold-layered-necklace.jpg" srcset="img/gold-layered-necklace@2x.jpg 2x" width="270" height="272">
+          </picture>
           <p>Gold layered necklace</p>
           <span>$ 155</span>
         </a>
         <a class="product-item product-item--catalog" href="product.html">
-          <img src="img/blue-gemstone-pendant.jpg" width="270" height="272">
+          <picture>
+            <source type="image/webp" srcset="img/blue-gemstone-pendant.webp 1x, img/blue-gemstone-pendant@2x.webp 2x">
+            <!-- 1x: 270px; 2x: 540px -->
+            <img src="img/blue-gemstone-pendant.jpg" srcset="img/blue-gemstone-pendant@2x.jpg 2x" width="270" height="272">
+          </picture>
           <p>Blue gemstone pendant</p>
           <span>$ 105</span>
         </a>
         <a class="product-item product-item--catalog" href="product.html">
-          <img src="img/boho-earrings.jpg" width="270" height="272">
+          <picture>
+            <source type="image/webp" srcset="img/boho-earrings.webp 1x, img/boho-earrings@2x.webp 2x">
+            <!-- 1x: 270px; 2x: 540px -->
+            <img src="img/boho-earrings.jpg" srcset="img/boho-earrings@2x.jpg 2x" width="270" height="272">
+          </picture>
           <p>Boho earrings</p>
           <span>$ 75</span>
         </a>
         <a class="product-item product-item--catalog" href="product.html">
-          <img src="img/bird-necklace.jpg" width="270" height="272">
+          <picture>
+            <source type="image/webp" srcset="img/bird-necklace.webp 1x, img/bird-necklace@2x.webp 2x">
+            <!-- 1x: 270px; 2x: 540px -->
+            <img src="img/bird-necklace.jpg" srcset="img/bird-necklace@2x.jpg 2x" width="270" height="272">
+          </picture>
           <p>Gold bird necklace</p>
           <span>$ 135</span>
         </a>
         <a class="product-item product-item--catalog" href="product.html">
-          <img src="img/black-leather-choker-necklace.jpg" width="270" height="272">
+          <picture>
+            <source type="image/webp" srcset="img/black-leather-choker-necklace.webp 1x, img/black-leather-choker-necklace@2x.webp 2x">
+            <!-- 1x: 270px; 2x: 540px -->
+            <img src="img/black-leather-choker-necklace.jpg" srcset="black-leather-choker-necklace@2x.jpg 2x" width="270" height="272">
+          </picture>
           <p>Black leather choker</p>
           <span>$ 85</span>
         </a>
         <a class="product-item product-item--catalog" href="product.html">
-          <img src="img/purple-gemstone-necklace-desktop.jpg" width="270" height="272">
+          <picture>
+            <source type="image/webp" srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x">
+            <!-- 1x: 270px; 2x: 540px -->
+            <img src="img/purple-gemstone-necklace-desktop.jpg" srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="272">
+          </picture>
           <p>Necklace with amethyst</p>
           <span>$ 145</span>
         </a>
         <a class="product-item product-item--catalog" href="product.html">
-          <img src="img/elephant-earrings.jpg" width="270" height="272">
+          <picture>
+            <source type="image/webp" srcset="img/elephant-earrings.webp 1x, img/elephant-earrings@2x.webp 2x">
+            <!-- 1x: 270px; 2x: 540px -->
+            <img src="img/elephant-earrings.jpg" srcset="img/elephant-earrings@2x.jpg 2x" width="270" height="272">
+          </picture>
           <p>Elephant earrings</p>
           <span>$ 95</span>
         </a>
         <a class="product-item product-item--catalog" href="product.html">
-          <img src="img/threader-necklace-closeup.jpg" width="270" height="272">
+          <picture>
+            <source type="image/webp" srcset="img/threader-necklace-closeup.webp 1x, img/threader-necklace-closeup@2x.webp 2x">
+            <!-- 1x: 270px; 2x: 540px -->
+            <img src="img/threader-necklace-closeup.jpg" srcset="img/threader-necklace-closeup@2x.jpg 2x" width="270" height="272">
+          </picture>
           <p>Threader necklace</p>
           <span>$ 115</span>
         </a>
         <a class="product-item product-item--catalog" href="product.html">
-          <img src="img/origami-crane-necklace.jpg" width="270" height="272">
+          <picture>
+            <source type="image/webp" srcset="img/origami-crane-necklace.webp 1x, img/origami-crane-necklace@2x.webp 2x">
+            <!-- 1x: 270px; 2x: 540px -->
+            <img src="img/origami-crane-necklace.jpg" srcset="img/origami-crane-necklace@2x.jpg 2x" width="270" height="272">
+          </picture>
           <p>Origami crane necklace</p>
           <span>$ 105</span>
         </a>
         <a class="product-item product-item--catalog" href="product.html">
-          <img src="img/marble-earrings.jpg" width="270" height="272">
+          <picture>
+            <source type="image/webp" srcset="img/marble-earrings.webp 1x, img/marble-earrings@2x.webp 2x">
+            <!-- 1x: 270px; 2x: 540px -->
+            <img src="img/marble-earrings.jpg" srcset="img/marble-earrings@2x.jpg 2x" width="270" height="272">
+          </picture>
           <p>Marble earrings</p>
           <span>$ 95</span>
         </a>
