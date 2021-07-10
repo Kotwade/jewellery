@@ -37,6 +37,18 @@
 
 .page-header__wrapper label {
   padding-left: 30px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    top: 15px;
+    left: 0;
+    background-image: url("../img/loupe-icon.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (max-width: $desktop-width) {
     display: none;
@@ -112,6 +124,12 @@
 
   @media (max-width: $desktop-width) {
     display: block;
+  }
+}
+
+.page-header--opened .page-header__toggle::before {
+  @media (max-width: $desktop-width) {
+    background-image: url("../img/burger-icon-white.svg");
   }
 }
 

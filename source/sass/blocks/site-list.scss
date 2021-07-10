@@ -12,6 +12,13 @@
     margin: 0;
     padding: 0;
     padding-left: 45px;
+    margin-top: 48px;
+  }
+}
+
+.site-list li {
+  @media (max-width: $desktop-width) {
+    margin-bottom: 21px;
   }
 }
 
