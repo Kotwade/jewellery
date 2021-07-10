@@ -1,5 +1,4 @@
 .accordion__toggle {
-  position: relative;
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
@@ -16,11 +15,11 @@
   &::after {
     content: "";
     position: absolute;
-    top: 55px;
-    right: -498px;
+    top: 50px;
+    right: 48px;
     width: 17px;
     height: 9px;
-    background-image: url("../img/arrow-down-icon.svg");
+    background-image: url("../img/arrow-up-icon.svg");
     background-repeat: no-repeat;
     cursor: pointer;
   }
@@ -40,7 +39,7 @@
 }
 
 .accordion__toggle--inactive::after {
-  background-image: url("../img/arrow-up-icon.svg");
+  background-image: url("../img/arrow-down-icon.svg");
 }
 
 .accordion__pane--hidden {
