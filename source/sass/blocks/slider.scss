@@ -50,17 +50,22 @@
   }
 }
 
-.slider__dots {
-  display: flex;
-  margin: 0 auto;
-  max-width: 48px;
-  justify-content: space-between;
+.swiper-pagination {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 96px;
 }
 
-.slider__dots span {
+.swiper-pagination-bullet {
+  width: 22px;
+  height: 22px;
   font-size: 16px;
   line-height: 21px;
   color: $dark;
+  background-color: $white;
+  margin-right: 7px;
+  cursor: pointer;
 }
 
 .swiper-button-prev {
@@ -71,6 +76,7 @@
   background-repeat: no-repeat;
   width: 29px;
   height: 10px;
+  cursor: pointer;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -85,6 +91,7 @@
   background-repeat: no-repeat;
   width: 29px;
   height: 10px;
+  cursor: pointer;
 
   @media (max-width: $tablet-width) {
     display: none;
