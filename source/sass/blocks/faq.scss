@@ -1,5 +1,5 @@
 .faq {
-  padding-bottom: 216px;
+  padding-bottom: 105px;
 
   @media (max-width: $desktop-width) {
     padding-bottom: 101px;
@@ -42,6 +42,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid $brown;
+  padding-bottom: 38px;
 }
 
 .faq__text p {
@@ -53,7 +54,6 @@
   padding: 0;
   width: 557px;
   padding-left: 50px;
-  padding-bottom: 41px;
 
   @media (max-width: $tablet-width) {
     width: 230px;

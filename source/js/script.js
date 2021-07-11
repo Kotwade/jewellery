@@ -21,11 +21,11 @@ const swiper = new Swiper('.swiper-container', {
     // when window width is >= 320px
     320: {
       slidesPerView: 2,
-      spaceBetween: 20
+      spaceBetween: 30
     },
     1024: {
       slidesPerView: 4,
-      spaceBetween: 40
+      spaceBetween: 30
     }
   },
   navigation: {
@@ -109,4 +109,20 @@ Array.prototype.forEach.call(accordionItems, function (accordion) {
   var accordionPane = accordion.querySelector('.accordion__pane');
   hidePane(accordionToggleButton, accordionPane);
   accordionToggleButton.addEventListener('click', toggleAccordion);
+});
+
+// Проверка WebP
+
+function testWebP(callback) {
+  var webP = new Image();
+  webP.onload = webP.onerror = function () {
+    callback(webP.height === 2);
+  };
+  webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+}
+
+testWebP(function (support) {
+  if (support) {
+    document.body.classList.add('webp');
+  }
 });

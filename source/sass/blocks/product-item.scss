@@ -1,6 +1,6 @@
 .product-item {
   text-decoration: none;
-  margin-bottom: 33px;
+  margin-bottom: 36px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 26px;
@@ -51,4 +51,8 @@
   @media (max-width: $tablet-width) {
     max-width: 130px;
   }
+}
+
+.product-item__purple {
+  height: 272px;
 }

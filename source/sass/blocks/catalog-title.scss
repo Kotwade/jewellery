@@ -3,6 +3,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog-background@2x.png");
+  }
+}
+
+.webp .catalog-title {
+  background-image: url("../img/catalog-background.webp");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog-background@2x.webp");
+  }
 }
 
 .catalog-title__wrapper {
