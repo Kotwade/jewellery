@@ -1,12 +1,12 @@
 .blog {
-  padding-bottom: 80px;
+  padding-bottom: 90px;
 
   @media (max-width: $desktop-width) {
     padding-bottom: 20px;
   }
 }
 
-.blog h3 {
+.blog__title h3 {
   font-family: "Cormorant Garamond", "Georgia", serif;
   font-weight: 700;
   font-size: 34px;
@@ -18,14 +18,17 @@
   margin-bottom: 19px;
 }
 
-.blog p {
+.blog__title p {
+  width: 72px;
   font-size: 16px;
   line-height: 21px;
   color: $dark;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  margin-bottom: 65px;
+  padding-bottom: 4px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid $brown;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 55px;
@@ -66,6 +69,8 @@
 }
 
 .blog__item img {
+  display: block;
+
   @media (max-width: $desktop-width) {
     width: 339px;
     object-fit: cover;
@@ -131,12 +136,15 @@
 }
 
 .blog__text p {
+  width: 97px;
   font-size: 16px;
   line-height: 21px;
   color: $dark;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $brown;
 }
 
 .blog__box .blog__text {

@@ -1,5 +1,6 @@
 .page-header {
   width: 100%;
+  z-index: 2;
 }
 
 .page-header--opened {
@@ -24,6 +25,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
+  padding-bottom: 13px;
 
   @media (max-width: $desktop-width) {
     padding-bottom: 25px;
@@ -79,11 +81,17 @@
   }
 }
 
-.page-header__logo img {
+.page-header__logo-icon {
+  fill: $brown;
+
   @media (max-width: $tablet-width) {
     width: 52px;
     height: 52px;
   }
+}
+
+.page-header--opened .page-header__logo-icon {
+  fill: $white;
 }
 
 .page-header__login {

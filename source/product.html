@@ -14,7 +14,11 @@
       <label>
         <input type="text" placeholder="Type here to search">
       </label>
-      <a class="page-header__logo" href="index.html"><img src="img/logo.svg" width="66" height="66" alt="logo"></a>
+      <a class="page-header__logo" href="index.html">
+        <svg class="page-header__logo-icon" width="66" height="66">
+          <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+        </svg>
+      </a>
       <a class="page-header__cart" href="#">
         <svg class="page-header__cart-icon" width="20" height="18">
           <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
@@ -25,11 +29,11 @@
         <p>Cart 0</p>
       </div>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--product">
       <label>
         <input type="text">
       </label>
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__list site-list site-list--product">
         <li><a class="site-list__link" href="#">What’s new</a></li>
         <li><a class="site-list__link" href="catalog.html">Chokers</a></li>
         <li><a class="site-list__link" href="catalog.html">Necklaces</a></li>
@@ -97,9 +101,11 @@
         </div>
       </div>
     </section>
-    <section class="slider swiper-container">
-      <h3>You May Also Like</h3>
-      <p>Shop Now</p>
+    <section class="slider slider--product swiper-container">
+      <div class="slider__text slider__text--product">
+        <h3>You May Also Like</h3>
+        <p>Shop Now</p>
+      </div>
       <div class="slider__wrapper swiper-wrapper">
         <a class="slider__item product-item swiper-slide" href="product.html">
           <picture>
@@ -259,6 +265,11 @@
             <p>Gold Necklace </p>
             <span>$ 115</span>
           </div>
+          <div class="cart-popup__count">
+            <button class="cart-popup__count-button" type="button">+</button>
+            <span>1</span>
+            <button class="cart-popup__count-button cart-popup__count-button--minus" type="button">-</button>
+          </div>
         </div>
         <div class="cart-popup__text">
           <p>You have 1 item in the cart</p>
@@ -281,33 +292,43 @@
           <input type="email" placeholder="Your E-mail">
         </label>
       </div>
-      <ul class="page-footer__list">
-        <li><a class="page-footer__link" href="#">Ordering & Payment</a></li>
-        <li><a class="page-footer__link" href="#">Terms & Conditions</a></li>
-        <li><a class="page-footer__link" href="#">Returns & Exchanges</a></li>
-        <li><a class="page-footer__link" href="#">Delivery</a></li>
-      </ul>
-      <ul class="page-footer__list">
-        <li><a class="page-footer__link" href="#">About CH</a></li>
-        <li><a class="page-footer__link" href="#">Stores & Hours</a></li>
-        <li><a class="page-footer__link" href="#">Jobs</a></li>
-        <li><a class="page-footer__link" href="#">Contact Us</a></li>
-      </ul>
+      <div class="page-footer__container">
+        <ul class="page-footer__list">
+          <li><a class="page-footer__link" href="#">Ordering & Payment</a></li>
+          <li><a class="page-footer__link" href="#">Terms & Conditions</a></li>
+          <li><a class="page-footer__link" href="#">Returns & Exchanges</a></li>
+          <li><a class="page-footer__link" href="#">Delivery</a></li>
+        </ul>
+        <ul class="page-footer__list">
+          <li><a class="page-footer__link" href="#">About CH</a></li>
+          <li><a class="page-footer__link" href="#">Stores & Hours</a></li>
+          <li><a class="page-footer__link" href="#">Jobs</a></li>
+          <li><a class="page-footer__link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
       <ul class="page-footer__contacts contacts">
         <li class="contacts__item">
-          <img src="img/facebook-icon.svg" width="8" height="15" alt="Facebook icon">
+          <a class="contacts__link" href="#">
+            <img src="img/facebook-icon.svg" width="8" height="15" alt="Facebook icon">
+          </a>
           <a class="contacts__link" href="#">Facebook</a>
         </li>
         <li class="contacts__item">
-          <img src="img/insagram-icon.svg" width="15" height="15" alt="Instagram icon">
+          <a class="contacts__link" href="#">
+            <img src="img/insagram-icon.svg" width="15" height="15" alt="Instagram icon">
+          </a>
           <a class="contacts__link" href="#">Instagram</a>
         </li>
-        <li class="contacts__item">
-          <img src="img/pinterest-icon.svg" width="15" height="15" alt="Pinterest icon">
+        <li class="contacts__item contacts__item--pinterest">
+          <a class="contacts__link" href="#">
+            <img src="img/pinterest-icon.svg" width="15" height="15" alt="Pinterest icon">
+          </a>
           <a class="contacts__link" href="#">Pinterest</a>
         </li>
-        <li class="contacts__item">
-          <img src="img/twitter-icon.svg" width="15" height="13" alt="Twitter icon">
+        <li class="contacts__item contacts__item--twitter">
+          <a class="contacts__link" href="#">
+            <img src="img/twitter-icon.svg" width="15" height="13" alt="Twitter icon">
+          </a>
           <a class="contacts__link" href="#">Twitter</a>
         </li>
       </ul>

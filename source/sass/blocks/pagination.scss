@@ -1,12 +1,30 @@
 .pagination {
+  border-top: 1px solid $border-grey;
+
+  @media (max-width: $tablet-width) {
+    border-top: none;
+  }
+}
+
+.pagination-container {
+  max-width: 1170px;
+  margin: 0 auto;
   display: flex;
   width: 100%;
   justify-content: space-between;
   margin-top: 31px;
   align-items: center;
+  padding-left: 300px;
+  padding-bottom: 70px;
+
+  @media (max-width: $desktop-width) {
+    max-width: 678px;
+    padding-left: 0;
+  }
 
   @media (max-width: $tablet-width) {
     margin-top: 7px;
+    padding-bottom: 65px;
   }
 }
 

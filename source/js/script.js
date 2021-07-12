@@ -72,18 +72,11 @@ if (popup) {
     document.removeEventListener('keydown', onPopupEscPress);
   };
 
-  popupOpen.addEventListener('click', function () {
-    openPopup();
-  });
+  popupOpen.addEventListener('click', openPopup);
 
-  popupClose.addEventListener('click', function () {
-    closePopup();
-  });
+  popupClose.addEventListener('click', closePopup);
 
-  overlay.addEventListener('click', function () {
-    popup.classList.add('cart-popup--hidden');
-    overlay.classList.add('overlay--hidden');
-  });
+  overlay.addEventListener('click', closePopup);
 };
 
 // Аккордеон

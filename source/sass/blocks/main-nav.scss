@@ -1,7 +1,13 @@
 .main-nav {
+  border-top: 1px solid $border-grey;
+
   @media (max-width: $desktop-width) {
     display: none;
   }
+}
+
+.main-nav--product {
+  border-bottom: 1px solid $border-grey;
 }
 
 .page-header--opened .main-nav {

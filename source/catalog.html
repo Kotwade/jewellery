@@ -14,7 +14,11 @@
       <label>
         <input type="text" placeholder="Type here to search">
       </label>
-      <a class="page-header__logo" href="index.html"><img src="img/logo.svg" width="66" height="66" alt="logo"></a>
+      <a class="page-header__logo" href="index.html">
+        <svg class="page-header__logo-icon" width="66" height="66">
+          <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+        </svg>
+      </a>
       <a class="page-header__cart" href="#">
         <svg class="page-header__cart-icon" width="20" height="18">
           <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
@@ -165,19 +169,21 @@
           <p>Marble earrings</p>
           <span>$ 95</span>
         </a>
-        <div class="pagination">
-          <a class="pagination__scroll" href="#">Previous</a>
-          <ul class="pagination__list">
-            <li><a class="pagination__number pagination__number--active" href="#">1</a></li>
-            <li><a class="pagination__number" href="#">2</a></li>
-            <li><a class="pagination__number" href="#">3</a></li>
-            <li><a class="pagination__number" href="#">4</a></li>
-            <li><a class="pagination__number" href="#">5</a></li>
-          </ul>
-          <a class="pagination__scroll" href="#">Next</a>
-        </div>
       </div>
     </section>
+    <div class="pagination">
+      <div class="pagination-container">
+        <a class="pagination__scroll" href="#">Previous</a>
+        <ul class="pagination__list">
+          <li><a class="pagination__number pagination__number--active" href="#">1</a></li>
+          <li><a class="pagination__number" href="#">2</a></li>
+          <li><a class="pagination__number" href="#">3</a></li>
+          <li><a class="pagination__number" href="#">4</a></li>
+          <li><a class="pagination__number" href="#">5</a></li>
+        </ul>
+        <a class="pagination__scroll" href="#">Next</a>
+      </div>
+    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
@@ -188,33 +194,43 @@
           <input type="email" placeholder="Your E-mail">
         </label>
       </div>
-      <ul class="page-footer__list">
-        <li><a class="page-footer__link" href="#">Ordering & Payment</a></li>
-        <li><a class="page-footer__link" href="#">Terms & Conditions</a></li>
-        <li><a class="page-footer__link" href="#">Returns & Exchanges</a></li>
-        <li><a class="page-footer__link" href="#">Delivery</a></li>
-      </ul>
-      <ul class="page-footer__list">
-        <li><a class="page-footer__link" href="#">About CH</a></li>
-        <li><a class="page-footer__link" href="#">Stores & Hours</a></li>
-        <li><a class="page-footer__link" href="#">Jobs</a></li>
-        <li><a class="page-footer__link" href="#">Contact Us</a></li>
-      </ul>
+      <div class="page-footer__container">
+        <ul class="page-footer__list">
+          <li><a class="page-footer__link" href="#">Ordering & Payment</a></li>
+          <li><a class="page-footer__link" href="#">Terms & Conditions</a></li>
+          <li><a class="page-footer__link" href="#">Returns & Exchanges</a></li>
+          <li><a class="page-footer__link" href="#">Delivery</a></li>
+        </ul>
+        <ul class="page-footer__list">
+          <li><a class="page-footer__link" href="#">About CH</a></li>
+          <li><a class="page-footer__link" href="#">Stores & Hours</a></li>
+          <li><a class="page-footer__link" href="#">Jobs</a></li>
+          <li><a class="page-footer__link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
       <ul class="page-footer__contacts contacts">
         <li class="contacts__item">
-          <img src="img/facebook-icon.svg" width="8" height="15" alt="Facebook icon">
+          <a class="contacts__link" href="#">
+            <img src="img/facebook-icon.svg" width="8" height="15" alt="Facebook icon">
+          </a>
           <a class="contacts__link" href="#">Facebook</a>
         </li>
         <li class="contacts__item">
-          <img src="img/insagram-icon.svg" width="15" height="15" alt="Instagram icon">
+          <a class="contacts__link" href="#">
+            <img src="img/insagram-icon.svg" width="15" height="15" alt="Instagram icon">
+          </a>
           <a class="contacts__link" href="#">Instagram</a>
         </li>
-        <li class="contacts__item">
-          <img src="img/pinterest-icon.svg" width="15" height="15" alt="Pinterest icon">
+        <li class="contacts__item contacts__item--pinterest">
+          <a class="contacts__link" href="#">
+            <img src="img/pinterest-icon.svg" width="15" height="15" alt="Pinterest icon">
+          </a>
           <a class="contacts__link" href="#">Pinterest</a>
         </li>
-        <li class="contacts__item">
-          <img src="img/twitter-icon.svg" width="15" height="13" alt="Twitter icon">
+        <li class="contacts__item contacts__item--twitter">
+          <a class="contacts__link" href="#">
+            <img src="img/twitter-icon.svg" width="15" height="13" alt="Twitter icon">
+          </a>
           <a class="contacts__link" href="#">Twitter</a>
         </li>
       </ul>

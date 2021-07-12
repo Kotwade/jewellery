@@ -15,10 +15,9 @@
         <input type="text" placeholder="Type here to search">
       </label>
       <a class="page-header__logo">
-        <picture>
-          <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
-          <img src="img/logo.svg" width="66" height="66" alt="logo">
-        </picture>
+        <svg class="page-header__logo-icon" width="66" height="66">
+          <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+        </svg>
       </a>
       <a class="page-header__cart" href="#">
         <svg class="page-header__cart-icon" width="20" height="18">
@@ -57,8 +56,10 @@
       </div>
     </section>
     <section class="slider swiper-container">
-      <h3>New In</h3>
-      <p>Shop Now</p>
+      <div class="slider__text">
+        <h3>New In</h3>
+        <p>Shop Now</p>
+      </div>
       <div class="slider__wrapper swiper-wrapper">
         <a class="slider__item product-item swiper-slide" href="product.html">
           <picture>
@@ -210,8 +211,10 @@
       <div class="swiper-pagination"></div>
     </section>
     <section class="blog">
-      <h3>Blog</h3>
-      <p>Read All</p>
+      <div class="blog__title">
+        <h3>Blog</h3>
+        <p>Read All</p>
+      </div>
       <div class="blog__container">
         <div class="blog__wrapper">
           <article class="blog__item">
@@ -340,6 +343,7 @@
         <label>
           <input type="password" placeholder="Password">
         </label>
+        <a class="login-popup__link" href="#">Forgot your password?</a>
         <button class="login-popup__button" type="button">Log In</button>
         <div class="login-popup__text">
           <p>Don’t have an account?</p>
@@ -357,33 +361,43 @@
           <input type="email" placeholder="Your E-mail">
         </label>
       </div>
-      <ul class="page-footer__list">
-        <li><a class="page-footer__link" href="#">Ordering & Payment</a></li>
-        <li><a class="page-footer__link" href="#">Terms & Conditions</a></li>
-        <li><a class="page-footer__link" href="#">Returns & Exchanges</a></li>
-        <li><a class="page-footer__link" href="#">Delivery</a></li>
-      </ul>
-      <ul class="page-footer__list">
-        <li><a class="page-footer__link" href="#">About CH</a></li>
-        <li><a class="page-footer__link" href="#">Stores & Hours</a></li>
-        <li><a class="page-footer__link" href="#">Jobs</a></li>
-        <li><a class="page-footer__link" href="#">Contact Us</a></li>
-      </ul>
+      <div class="page-footer__container">
+        <ul class="page-footer__list">
+          <li><a class="page-footer__link" href="#">Ordering & Payment</a></li>
+          <li><a class="page-footer__link" href="#">Terms & Conditions</a></li>
+          <li><a class="page-footer__link" href="#">Returns & Exchanges</a></li>
+          <li><a class="page-footer__link" href="#">Delivery</a></li>
+        </ul>
+        <ul class="page-footer__list">
+          <li><a class="page-footer__link" href="#">About CH</a></li>
+          <li><a class="page-footer__link" href="#">Stores & Hours</a></li>
+          <li><a class="page-footer__link" href="#">Jobs</a></li>
+          <li><a class="page-footer__link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
       <ul class="page-footer__contacts contacts">
         <li class="contacts__item">
-          <img src="img/facebook-icon.svg" width="8" height="8" alt="Facebook icon">
+          <a class="contacts__link" href="#">
+            <img src="img/facebook-icon.svg" width="8" height="15" alt="Facebook icon">
+          </a>
           <a class="contacts__link" href="#">Facebook</a>
         </li>
         <li class="contacts__item">
-          <img src="img/insagram-icon.svg" width="15" height="9" alt="Instagram icon">
+          <a class="contacts__link" href="#">
+            <img src="img/insagram-icon.svg" width="15" height="15" alt="Instagram icon">
+          </a>
           <a class="contacts__link" href="#">Instagram</a>
         </li>
-        <li class="contacts__item">
-          <img src="img/pinterest-icon.svg" width="15" height="9" alt="Pinterest icon">
+        <li class="contacts__item contacts__item--pinterest">
+          <a class="contacts__link" href="#">
+            <img src="img/pinterest-icon.svg" width="15" height="15" alt="Pinterest icon">
+          </a>
           <a class="contacts__link" href="#">Pinterest</a>
         </li>
-        <li class="contacts__item">
-          <img src="img/twitter-icon.svg" width="15" height="7" alt="Twitter icon">
+        <li class="contacts__item contacts__item--twitter">
+          <a class="contacts__link" href="#">
+            <img src="img/twitter-icon.svg" width="15" height="13" alt="Twitter icon">
+          </a>
           <a class="contacts__link" href="#">Twitter</a>
         </li>
       </ul>

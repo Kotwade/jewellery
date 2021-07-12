@@ -144,7 +144,9 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 23px;
+  margin-bottom: 11px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $border-grey;
 }
 
 .info__additional p {
@@ -168,7 +170,7 @@
   padding-top: 23px;
   padding-bottom: 23px;
   margin-bottom: 21px;
-  margin-top: 35px;
+  margin-top: 39px;
   border: none;
   text-align: center;
 

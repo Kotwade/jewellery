@@ -77,6 +77,10 @@
   }
 }
 
+.cart-popup__price {
+  margin-right: 207px;
+}
+
 .cart-popup__price p {
   font-family: "Cormorant Garamond", "Georgia", serif;
   font-weight: 700;
@@ -217,4 +221,30 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.cart-popup__count-button {
+  display: block;
+  background-color: transparent;
+  border: none;
+  width: 14px;
+  height: 14px;
+  color: $grey;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-popup__count-button--minus {
+  height: 2px;
+}
+
+.cart-popup__count span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: $dark;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
 }
