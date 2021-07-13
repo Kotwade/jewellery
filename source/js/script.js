@@ -115,6 +115,39 @@ if (login) {
   overlay.addEventListener('click', closePopup);
 }
 
+var filter = document.querySelector('.filter');
+
+if (filter) {
+  var popupOpen = document.querySelector('.catalog-main__button');
+  var popupClose = filter.querySelector('.filter__button-close');
+  var overlay = document.querySelector('.overlay');
+
+  var onPopupEscPress = function (evt) {
+    if (evt.key === ESC_KEY) {
+      closePopup();
+    }
+  };
+
+  var openPopup = function () {
+    filter.classList.add('filter--open');
+    overlay.classList.remove('overlay--hidden');
+    pageBody.classList.add('page-body--opened');
+    document.addEventListener('keydown', onPopupEscPress);
+  };
+
+  var closePopup = function () {
+    filter.classList.remove('filter--open');
+    overlay.classList.add('overlay--hidden');
+    pageBody.classList.remove('page-body--opened');
+    document.removeEventListener('keydown', onPopupEscPress);
+  };
+
+  popupOpen.addEventListener('click', openPopup);
+
+  popupClose.addEventListener('click', closePopup);
+
+  overlay.addEventListener('click', closePopup);
+};
 
 // Аккордеон
 

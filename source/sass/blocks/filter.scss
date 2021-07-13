@@ -6,6 +6,20 @@
   }
 }
 
+.filter--open {
+  @media (max-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    background-color: $white;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 30;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
 .filter__container {
   border: 1px solid $brown;
   margin-bottom: 35px;
@@ -157,4 +171,22 @@
 
 .filter__toggle--max {
   left: 160px;
+}
+
+.filter__button-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/cross-icon.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+  }
 }
