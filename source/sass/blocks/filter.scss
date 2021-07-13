@@ -12,6 +12,7 @@
 }
 
 .filter__item {
+  position: relative;
   border: none;
   margin: 0;
   padding: 0;
@@ -23,10 +24,26 @@
   }
 }
 
-.filter legend {
+.filter__legend {
   font-size: 16px;
   line-height: 21px;
   color: $dark;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    width: 17px;
+    height: 9px;
+    background-image: url("../img/arrow-up-icon.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+}
+
+.filter__legend--inactive::after {
+  background-image: url("../img/arrow-down-icon.svg");
 }
 
 .filter__list {
@@ -79,4 +96,65 @@
   background-color: $white;
   color: $dark;
   border: 1px solid $brown;
+}
+
+.filter__range {
+  width: 250px;
+}
+
+.filter__range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+
+.filter__scale {
+  height: 2px;
+  background: #f0eae4;
+}
+
+.filter__bar {
+  width: 42%;
+  margin-left: 30%;
+  height: 2px;
+  background: $brown;
+}
+
+.filter__toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid $brown;
+  background-color: $brown;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.filter__range-price {
+  display: flex;
+  justify-content: space-between;
+  width: 187px;
+  padding-left: 77px;
+}
+
+.filter__range-price span {
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark;
+}
+
+.filter__toggle--min {
+  left: 80px;
+}
+
+.filter__toggle--max {
+  left: 160px;
 }

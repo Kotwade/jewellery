@@ -58,11 +58,11 @@
     <section class="catalog-main">
       <form class="catalog-main__filter filter" method="POST" action="https://echo.htmlacademy.ru">
         <div class="filter__container">
-          <fieldset class="filter__item">
-            <legend>
+          <fieldset class="filter__item accordion">
+            <legend class="filter__legend accordion__toggle">
               Product
             </legend>
-            <ul class="filter__list">
+            <ul class="filter__list accordion__pane">
               <li class="filter__list-item">
                 <input class="visually-hidden" type="checkbox" id="filter__necklaces">
                 <label for="filter__necklaces">Necklaces</label>
@@ -81,11 +81,11 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter__item">
-            <legend>
+          <fieldset class="filter__item accordion">
+            <legend class="filter__legend accordion__toggle">
               Material
             </legend>
-            <ul class="filter__list">
+            <ul class="filter__list accordion__pane">
               <li class="filter__list-item">
                 <input class="visually-hidden" type="checkbox" id="filter__gold">
                 <label for="filter__gold">Gold</label>
@@ -96,11 +96,11 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter__item">
-            <legend>
+          <fieldset class="filter__item accordion">
+            <legend class="filter__legend accordion__toggle">
               Collection
             </legend>
-            <ul class="filter__list">
+            <ul class="filter__list accordion__pane">
               <li class="filter__list-item">
                 <input class="visually-hidden" type="checkbox" id="filter__pink-flamingo">
                 <label for="filter__pink-flamingo">Pink flamingo</label>
@@ -111,15 +111,19 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter__item">
-            <legend>Price</legend>
-            <div class="filter__range">
+          <fieldset class="filter__item accordion">
+            <legend class="filter__legend accordion__toggle">Price</legend>
+            <div class="filter__range accordion__pane">
               <div class="filter__range-controls">
                 <div class="filter__scale">
                   <div class="filter__bar"></div>
                 </div>
                 <div class="filter__toggle filter__toggle--min" tabindex="0"></div>
                 <div class="filter__toggle filter__toggle--max" tabindex="0"></div>
+              </div>
+              <div class="filter__range-price">
+                <span>$ 55</span>
+                <span>$ 155</span>
               </div>
             </div>
           </fieldset>
