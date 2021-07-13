@@ -98,13 +98,30 @@
   display: flex;
   width: 119px;
   justify-content: space-between;
-  color: $dark;
-  font-size: 14px;
-  line-height: 21px;
 
   @media (max-width: $desktop-width) {
     display: none;
   }
+}
+
+.page-header__login-link {
+  color: $dark;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  padding-top: 12px;
+}
+
+.page-header__cart-link {
+  color: $dark;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  padding-top: 12px;
 }
 
 .page-header__toggle {

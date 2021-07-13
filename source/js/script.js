@@ -1,4 +1,6 @@
 'use strict';
+var ESC_KEY = 'Escape';
+
 var pageHeader = document.querySelector('.page-header');
 var headerToggle = document.querySelector('.page-header__toggle');
 var pageBody = document.querySelector('.page-body');
@@ -47,7 +49,6 @@ const swiper = new Swiper('.swiper-container', {
 var popup = document.querySelector('.cart-popup');
 
 if (popup) {
-  var ESC_KEY = 'Escape';
   var popupOpen = document.querySelector('.info__button');
   var popupClose = popup.querySelector('.cart-popup__button-cross');
   var overlay = document.querySelector('.overlay');
@@ -78,6 +79,42 @@ if (popup) {
 
   overlay.addEventListener('click', closePopup);
 };
+
+var login = document.querySelector('.login-popup');
+
+if (login) {
+  var popupOpen = document.querySelector('.page-header__login-link');
+  var popupClose = login.querySelector('.login-popup__button-close');
+  var overlay = document.querySelector('.overlay');
+
+  var onPopupEscPress = function (evt) {
+    if (evt.key === ESC_KEY) {
+      closePopup();
+    }
+  };
+
+  var openPopup = function (evt) {
+    evt.preventDefault();
+    login.classList.remove('login-popup--hidden');
+    overlay.classList.remove('overlay--hidden');
+    pageBody.classList.add('page-body--opened');
+    document.addEventListener('keydown', onPopupEscPress);
+   };
+
+  var closePopup = function () {
+    login.classList.add('login-popup--hidden');
+    overlay.classList.add('overlay--hidden');
+    pageBody.classList.remove('page-body--opened');
+    document.removeEventListener('keydown', onPopupEscPress);
+  };
+
+  popupOpen.addEventListener('click', openPopup);
+
+  popupClose.addEventListener('click', closePopup);
+
+  overlay.addEventListener('click', closePopup);
+}
+
 
 // Аккордеон
 

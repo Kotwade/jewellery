@@ -32,8 +32,8 @@
         </svg>
       </a>
       <div class="page-header__login">
-        <p>Login</p>
-        <p>Cart 0</p>
+        <a class="page-header__login-link" href="login.html">Login</a>
+        <a class="page-header__cart-link" href="#">Cart 0</a>
       </div>
     </div>
     <nav class="main-nav">
@@ -342,7 +342,7 @@
         </div>
       </div>
     </section>
-    <section class="login-popup">
+    <section class="login-popup login-popup--hidden">
       <div class="login-popup__container">
         <h3>Log In</h3>
         <label>
@@ -358,6 +358,7 @@
           <span>Sign up</span>
         </div>
       </div>
+      <button class="login-popup__button-close" type="button"></button>
     </section>
   </main>
   <footer class="page-footer">
@@ -411,6 +412,7 @@
       </ul>
     </div>
   </footer>
+  <div class="overlay overlay--hidden"></div>
   <script src="js/swiper-bundle.js"></script>
   <script src="js/script.js"></script>
 </body>
