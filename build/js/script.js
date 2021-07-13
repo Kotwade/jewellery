@@ -42,7 +42,7 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
-//Попапы
+// Попапы
 
 var popup = document.querySelector('.cart-popup');
 
@@ -95,14 +95,14 @@ var showPane = function (button, pane) {
 };
 
 var toggleAccordion = function (evt) {
-  Array.prototype.forEach.call(accordionPanes, function (accordionPane) {
-    var button = accordionPane.closest('.accordion').querySelector('.accordion__toggle');
-    if (button === evt.target && !button.classList.contains('accordion__toggle--inactive') || button !== evt.target) {
-      hidePane(button, accordionPane);
-    } else if (button === evt.target) {
-      showPane(button, accordionPane);
-    }
-  });
+  var button = evt.target;
+  var accordionPane = button.nextElementSibling;
+
+  if (button.classList.contains('accordion__toggle--inactive')) {
+    showPane(button, accordionPane);
+  } else {
+    hidePane(button, accordionPane);
+  }
 };
 
 Array.prototype.forEach.call(accordionItems, function (accordion) {
