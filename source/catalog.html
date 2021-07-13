@@ -56,9 +56,77 @@
       </div>
     </section>
     <section class="catalog-main">
-      <div class="filter">
-        <h3>Filter</h3>
-      </div>
+      <form class="catalog-main__filter filter" method="POST" action="https://echo.htmlacademy.ru">
+        <div class="filter__container">
+          <fieldset class="filter__item">
+            <legend>
+              Product
+            </legend>
+            <ul class="filter__list">
+              <li class="filter__list-item">
+                <input class="visually-hidden" type="checkbox" id="filter__necklaces">
+                <label for="filter__necklaces">Necklaces</label>
+              </li>
+              <li class="filter__list-item">
+                <input class="visually-hidden" type="checkbox" id="filter__chokers">
+                <label for="filter__chokers">Chokers</label>
+              </li>
+              <li class="filter__list-item">
+                <input class="visually-hidden" type="checkbox" id="filter__rings">
+                <label for="filter__rings">Rings</label>
+              </li>
+              <li class="filter__list-item">
+                <input class="visually-hidden" type="checkbox" id="filter__earrings">
+                <label for="filter__earrings">Earrings</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter__item">
+            <legend>
+              Material
+            </legend>
+            <ul class="filter__list">
+              <li class="filter__list-item">
+                <input class="visually-hidden" type="checkbox" id="filter__gold">
+                <label for="filter__gold">Gold</label>
+              </li>
+              <li class="filter__list-item">
+                <input class="visually-hidden" type="checkbox" id="filter__silver">
+                <label for="filter__silver">Silver</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter__item">
+            <legend>
+              Collection
+            </legend>
+            <ul class="filter__list">
+              <li class="filter__list-item">
+                <input class="visually-hidden" type="checkbox" id="filter__pink-flamingo">
+                <label for="filter__pink-flamingo">Pink flamingo</label>
+              </li>
+              <li class="filter__list-item">
+                <input class="visually-hidden" type="checkbox" id="filter__dreams">
+                <label for="filter__dreams">Dreams</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter__item">
+            <legend>Price</legend>
+            <div class="filter__range">
+              <div class="filter__range-controls">
+                <div class="filter__scale">
+                  <div class="filter__bar"></div>
+                </div>
+                <div class="filter__toggle filter__toggle--min" tabindex="0"></div>
+                <div class="filter__toggle filter__toggle--max" tabindex="0"></div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <button class="filter__button filter__button--apply" type="submit">Apply</button>
+        <button class="filter__button filter__button--clear" type="button">Clear All</button>
+      </form>
       <div class="catalog-main__wrapper">
         <button class="catalog-main__button" type="button">Filter</button>
         <a class="product-item product-item--catalog" href="product.html">
