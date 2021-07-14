@@ -11,6 +11,7 @@
     display: block;
     position: absolute;
     background-color: $white;
+    width: 290px;
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
@@ -22,7 +23,7 @@
 
 .filter__container {
   border: 1px solid $brown;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .filter__item {
@@ -30,7 +31,7 @@
   border: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 29px;
+  margin-bottom: 32px;
   border-bottom: 1px solid $brown;
 
   &:last-child {
@@ -42,26 +43,36 @@
   font-size: 16px;
   line-height: 21px;
   color: $dark;
+  padding-top: 23px;
+  padding-left: 25px;
 
   &::after {
     content: "";
     position: absolute;
-    top: 5px;
-    right: 20px;
+    top: 28px;
+    right: 23px;
     width: 17px;
     height: 9px;
-    background-image: url("../img/arrow-up-icon.svg");
-    background-repeat: no-repeat;
     cursor: pointer;
   }
 }
 
-.filter__legend--inactive::after {
-  background-image: url("../img/arrow-down-icon.svg");
+.filter__legend--second {
+  padding-top: 0;
+}
+
+.filter__legend--second::after {
+  top: 0;
+  right: 23px;
 }
 
 .filter__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 58px;
+  padding-bottom: 26px;
+  padding-top: 5px;
 }
 
 .filter__list-item label {
@@ -74,8 +85,8 @@
 .filter__list-item input + label::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: -30px;
+  top: 2px;
+  left: -24px;
   border: 1px solid $brown;
   width: 15px;
   height: 15px;
@@ -85,8 +96,8 @@
 .filter__list-item input:checked + label::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: -30px;
+  top: 2px;
+  left: -24px;
   width: 15px;
   height: 15px;
   background-color: $brown;
@@ -104,6 +115,10 @@
   display: block;
   margin-bottom: 21px;
   border: none;
+
+  @media (max-width: $desktop-width) {
+    width: 290px;
+  }
 }
 
 .filter__button--clear {
@@ -119,8 +134,8 @@
 .filter__range-controls {
   position: relative;
   height: 41px;
-  margin-bottom: 15px;
-  padding-top: 39px;
+  margin-bottom: -8px;
+  padding-top: 19px;
   padding-right: 20px;
   padding-left: 20px;
   border-radius: 5px;
@@ -140,7 +155,7 @@
 
 .filter__toggle {
   position: absolute;
-  top: 31px;
+  top: 12px;
   left: 0;
   width: 4px;
   height: 4px;
@@ -155,8 +170,8 @@
 .filter__range-price {
   display: flex;
   justify-content: space-between;
-  width: 187px;
-  padding-left: 77px;
+  width: 200px;
+  padding-left: 61px;
 }
 
 .filter__range-price span {
@@ -166,22 +181,24 @@
 }
 
 .filter__toggle--min {
-  left: 80px;
+  left: 69px;
 }
 
 .filter__toggle--max {
-  left: 160px;
+  left: 173px;
 }
 
 .filter__button-close {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 14px;
-  height: 14px;
-  background-image: url("../img/cross-icon.svg");
+  top: -10px;
+  right: -10px;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/white-cross.svg");
+  background-position: center center;
   background-repeat: no-repeat;
-  background-color: transparent;
+  background-color: $black;
+  border-radius: 50%;
   border: none;
   cursor: pointer;
   display: none;

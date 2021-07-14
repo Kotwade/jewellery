@@ -5,13 +5,14 @@
   max-width: 1170px;
 
   @media (max-width: $desktop-width) {
-    padding-bottom: 109px;
+    padding-bottom: 92px;
+    padding-top: 70px;
     max-width: 678px;
   }
 
   @media (max-width: $tablet-width) {
     padding-top: 61px;
-    padding-bottom: 67px;
+    padding-bottom: 82px;
     max-width: 290px;
   }
 }
@@ -19,6 +20,16 @@
 .slider--product {
   padding-top: 89px;
   padding-bottom: 162px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 64px;
+    padding-bottom: 102px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 92px;
+  }
 }
 
 .slider__text h3 {
@@ -31,6 +42,10 @@
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 19px;
+  }
 }
 
 .slider__text p {
@@ -43,6 +58,14 @@
   padding: 0;
   margin-bottom: 58px;
   border-bottom: 1px solid $brown;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 43px;
+  }
 }
 
 .slider__text--product h3 {
@@ -51,6 +74,14 @@
 
 .slider__text--product p {
   margin-bottom: 63px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 43px;
+  }
 }
 
 .slider__item img {
@@ -71,10 +102,26 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 115px;
+
+  @media (max-width: $desktop-width) {
+    bottom: 65px;
+  }
+
+  @media (max-width: $tablet-width) {
+    bottom: 55px;
+  }
 }
 
 .slider--product .swiper-pagination {
   bottom: 125px;
+
+  @media (max-width: $desktop-width) {
+    bottom: 75px;
+  }
+
+  @media (max-width: $tablet-width) {
+    bottom: 65px;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -82,10 +129,14 @@
   height: 22px;
   font-size: 16px;
   line-height: 21px;
-  color: $dark;
+  color: $grey;
   background-color: $white;
   margin-right: 7px;
   cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  color: $dark;
 }
 
 .swiper-button-prev {
@@ -103,6 +154,14 @@
   }
 }
 
+.slider-button-prev--product {
+  top: 134px;
+
+  @media (max-width: $desktop-width) {
+    top: 109px;
+  }
+}
+
 .swiper-button-next {
   position: absolute;
   right: 0;
@@ -115,5 +174,13 @@
 
   @media (max-width: $tablet-width) {
     display: none;
+  }
+}
+
+.slider-button-next--product {
+  top: 134px;
+
+  @media (max-width: $desktop-width) {
+    top: 109px;
   }
 }

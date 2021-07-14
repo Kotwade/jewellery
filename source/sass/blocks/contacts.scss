@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     width: 162px;
-    margin-top: 6px;
+    margin-top: 0;
   }
 }
 
@@ -20,7 +20,7 @@
   display: flex;
   width: 115px;
   justify-content: space-between;
-  margin-bottom: 22px;
+  margin-bottom: 10px;
   align-items: center;
 }
 
@@ -41,4 +41,17 @@
 
 .contacts__item--twitter {
   width: 85px;
+}
+
+.contacts__link-icon img {
+  @media (max-width: $tablet-width) {
+    width: 20px;
+    height: 21px;
+  }
+}
+
+.contacts__link-icon--facebook img {
+  @media (max-width: $tablet-width) {
+    width: 12px;
+  }
 }

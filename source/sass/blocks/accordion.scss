@@ -22,10 +22,16 @@
     background-image: url("../img/arrow-up-icon.svg");
     background-repeat: no-repeat;
     cursor: pointer;
+
+    @media (max-width: $tablet-width) {
+      top: 24px;
+      right: 26px;
+    }
   }
 
   @media (max-width: $desktop-width) {
     padding-left: 50px;
+    margin-bottom: 26px;
   }
 
   @media (max-width: $tablet-width) {
@@ -33,8 +39,9 @@
     line-height: 22px;
     width: 207px;
     padding-left: 25px;
-    padding-top: 1px;
-    margin-bottom: 25px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
   }
 }
 

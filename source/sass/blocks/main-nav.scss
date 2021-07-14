@@ -3,6 +3,7 @@
 
   @media (max-width: $desktop-width) {
     display: none;
+    border-top: 0;
   }
 }
 
@@ -24,6 +25,18 @@
 
 .main-nav label {
   display: none;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 22px;
+    left: 57px;
+    background-image: url("../img/loup-white.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (max-width: $desktop-width) {
     margin: 0;
@@ -46,6 +59,7 @@
 }
 
 .main-nav input {
+  position: relative;
   max-width: 678px;
   width: 100%;
 
@@ -63,6 +77,11 @@
   margin: 0;
   padding: 0;
   padding-left: 45px;
+  margin-top: 33px;
+}
+
+.main-nav__menu li {
+  margin-bottom: 13px;
 }
 
 .page-header--opened .main-nav__menu {
@@ -91,6 +110,7 @@
   line-height: 23px;
   text-decoration: none;
   color: $white;
+  margin-top: 44px;
 }
 
 .page-header--opened .main-nav__login {
