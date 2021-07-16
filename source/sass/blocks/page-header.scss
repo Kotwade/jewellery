@@ -112,6 +112,14 @@
   margin: 0;
   text-decoration: none;
   padding-top: 12px;
+
+  &:hover {
+    color: $brown;
+  }
+
+  &:active {
+    color: $grey;
+  }
 }
 
 .page-header__cart-link {
@@ -122,6 +130,14 @@
   margin: 0;
   text-decoration: none;
   padding-top: 12px;
+
+  &:hover {
+    color: $brown;
+  }
+
+  &:active {
+    color: $grey;
+  }
 }
 
 .page-header__toggle {

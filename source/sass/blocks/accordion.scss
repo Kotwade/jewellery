@@ -8,9 +8,18 @@
   margin-bottom: 8px;
   padding-top: 43px;
   padding-left: 38px;
+  padding-right: 545px;
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    color: $brown;
+  }
+
+  &:active {
+    color: $grey;
+  }
 
   &::after {
     content: "";
@@ -32,6 +41,7 @@
   @media (max-width: $desktop-width) {
     padding-left: 50px;
     margin-bottom: 26px;
+    padding-right: 172px;
   }
 
   @media (max-width: $tablet-width) {
@@ -42,6 +52,7 @@
     padding-top: 15px;
     margin-bottom: 15px;
     text-align: left;
+    padding-right: 0;
   }
 }
 

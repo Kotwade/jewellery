@@ -1,4 +1,4 @@
-.image {
+.images {
   padding-bottom: 96px;
 
   @media (max-width: $desktop-width) {
@@ -10,7 +10,7 @@
   }
 }
 
-.image h3 {
+.images h3 {
   font-family: "Cormorant Garamond", "Georgia", serif;
   font-weight: 700;
   font-size: 34px;
@@ -27,7 +27,7 @@
   }
 }
 
-.image p {
+.images p {
   width: 76px;
   font-size: 16px;
   line-height: 21px;
@@ -44,7 +44,7 @@
   }
 }
 
-.image__container {
+.images__container {
   max-width: 1170px;
   display: flex;
   justify-content: space-between;
@@ -60,7 +60,7 @@
   }
 }
 
-.image__container img {
+.images__container img {
   margin-bottom: 29px;
 
   @media (max-width: $desktop-width) {
@@ -73,7 +73,7 @@
   }
 }
 
-.image__wrapper {
+.images__wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -84,7 +84,7 @@
   }
 }
 
-.image__block {
+.images__block {
   display: flex;
   flex-direction: column;
   margin-right: 27px;
@@ -98,7 +98,7 @@
   }
 }
 
-.image__box {
+.images__box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -113,21 +113,21 @@
   }
 }
 
-.image__block-first {
+.images__block-first {
   @media (max-width: $desktop-width) {
     width: 133px;
     height: 133px;
   }
 }
 
-.image__block-second {
+.images__block-second {
   @media (max-width: $desktop-width) {
     width: 133px;
     height: 87px;
   }
 }
 
-.image__model {
+.images__model {
   @media (max-width: $desktop-width) {
     width: 231px;
     height: 240px;
@@ -139,19 +139,19 @@
   }
 }
 
-.image__block-first--hand {
+.images__block-first--hand {
   @media (max-width: $tablet-width) {
     display: none;
   }
 }
 
-.image__block-first--rings {
+.images__block-first--rings {
   @media (max-width: $tablet-width) {
     display: none;
   }
 }
 
-.image__block-second--set {
+.images__block-second--set {
   @media (max-width: $tablet-width) {
     margin-right: 24px;
   }
