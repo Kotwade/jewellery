@@ -118,7 +118,7 @@ if (login) {
 var filter = document.querySelector('.filter');
 
 if (filter) {
-  var popupOpen = document.querySelector('.catalog-main__button');
+  var popupOpen = document.querySelector('.catalog-button');
   var popupClose = filter.querySelector('.filter__button-close');
   var overlay = document.querySelector('.overlay');
 

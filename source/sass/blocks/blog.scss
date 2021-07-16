@@ -132,10 +132,10 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 37px;
+  margin-bottom: 28px;
 }
 
-.blog__text p {
+.blog__text a {
   width: 97px;
   font-size: 16px;
   line-height: 21px;
@@ -143,8 +143,18 @@
   text-align: center;
   margin: 0 auto;
   padding: 0;
+  margin-left: 94px;
   padding-bottom: 4px;
   border-bottom: 1px solid $brown;
+  text-decoration: none;
+
+  @media (max-width: $desktop-width) {
+    margin-left: 121px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 97px;
+  }
 }
 
 .blog__box .blog__text {
