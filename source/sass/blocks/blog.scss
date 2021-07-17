@@ -148,6 +148,14 @@
   border-bottom: 1px solid $brown;
   text-decoration: none;
 
+  &:hover {
+    color: $brown;
+  }
+
+  &:active {
+    color: $grey;
+  }
+
   @media (max-width: $desktop-width) {
     margin-left: 121px;
   }

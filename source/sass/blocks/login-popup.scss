@@ -106,6 +106,14 @@
   margin-bottom: 20px;
   margin-top: 20px;
 
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   @media (max-width: $tablet-width) {
     width: 240px;
   }

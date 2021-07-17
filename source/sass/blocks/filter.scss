@@ -119,6 +119,14 @@
   margin-bottom: 15px;
   border: none;
 
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   @media (max-width: $desktop-width) {
     width: 290px;
   }
@@ -128,6 +136,14 @@
   background-color: $white;
   color: $dark;
   border: 1px solid $brown;
+
+  &:hover {
+    color: $brown;
+  }
+
+  &:active {
+    color: $grey;
+  }
 }
 
 .filter__range {
