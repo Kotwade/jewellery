@@ -165,7 +165,7 @@
   }
 }
 
-.blog__box .blog__text {
+.blog__wrapper--box .blog__text {
   margin-left: -285px;
   margin-top: 330px;
 
@@ -175,11 +175,5 @@
 
   @media (max-width: $tablet-width) {
     padding-bottom: 76px;
-  }
-}
-
-.blog__box {
-  @media (max-width: $desktop-width) {
-    margin: 0 auto;
   }
 }

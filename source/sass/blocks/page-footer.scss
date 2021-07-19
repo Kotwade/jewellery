@@ -70,7 +70,7 @@
   margin-bottom: 32px;
 }
 
-.page-footer__text {
+.page-footer__form {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,9 +87,12 @@
   }
 }
 
-.page-footer__text input {
+.page-footer__form input {
   max-width: 400px;
   background-color: $black;
+  font-size: 14px;
+  line-height: 21px;
+  color: $white;
   border: none;
 
   @media (max-width: $desktop-width) {
@@ -97,25 +100,29 @@
   }
 }
 
-.page-footer__text input::placeholder {
+.page-footer__form input::placeholder {
   font-size: 14px;
   line-height: 21px;
   color: $grey;
 }
 
-.page-footer__text-link {
+.page-footer__form-button {
   position: relative;
   font-size: 16px;
   line-height: 21px;
   color: $white;
-  text-decoration: none;
-  padding-right: 50px;
+  border: none;
+  padding: 0;
+  padding-top: 8px;
+  padding-right: 42px;
+  background-color: transparent;
+  cursor: pointer;
 
   &::after {
     content: "";
     position: absolute;
-    top: 9px;
-    right: 11px;
+    top: 14px;
+    right: 0;
     width: 29px;
     height: 9px;
     background-image: url("../img/arrow-right-white.svg");

@@ -19,9 +19,11 @@
   <header class="page-header page-header--nojs">
     <div class="page-header__wrapper">
       <button class="page-header__toggle" type="button"></button>
-      <label>
-        <input type="text" placeholder="Type here to search">
-      </label>
+      <form class="page-header__form" method="POST" action="https://echo.htmlacademy.ru">
+        <label>
+          <input type="search" placeholder="Type here to search">
+        </label>
+      </form>
       <a class="page-header__logo" href="index.html">
         <svg class="page-header__logo-icon" width="66" height="66">
           <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
@@ -268,7 +270,7 @@
       </div>
     </div>
     <section class="login-popup login-popup--hidden">
-      <div class="login-popup__container">
+      <form class="login-popup__form" method="POST" action="https://echo.htmlacademy.ru">
         <h3>Log In</h3>
         <label>
           <input type="email" placeholder="Your E-mail">
@@ -282,7 +284,7 @@
           <p>Don’t have an account?</p>
           <span>Sign up</span>
         </div>
-      </div>
+      </form>
       <button class="login-popup__button-close" type="button"></button>
     </section>
   </main>
@@ -291,12 +293,12 @@
       <div class="page-footer__title">
         <h3>The good stuff in your inbox</h3>
         <p>News and updates from CH. No spam, we promise.</p>
-        <div class="page-footer__text">
+        <form class="page-footer__form" method="POST" action="https://echo.htmlacademy.ru">
           <label>
             <input type="email" placeholder="Your E-mail">
           </label>
-          <a class="page-footer__text-link" href="#">Sign&nbsp;Up</a>
-        </div>
+          <button class="page-footer__form-button" type="submit">Sign&nbsp;Up</button>
+        </form>
       </div>
       <div class="page-footer__container">
         <ul class="page-footer__list">
@@ -316,25 +318,25 @@
         <li class="contacts__item">
           <a class="contacts__link" href="#">
             <img class="contacts__link-icon contacts__link-icon--facebook" src="img/facebook-icon.svg" width="8" height="15" alt="Facebook icon">
-          Facebook
-        </a>
+            <span>Facebook</span>
+          </a>
         </li>
         <li class="contacts__item">
           <a class="contacts__link" href="#">
             <img class="contacts__link-icon" src="img/insagram-icon.svg" width="15" height="15" alt="Instagram icon">
-           Instagram
+            <span>Instagram</span>
           </a>
         </li>
         <li class="contacts__item contacts__item--pinterest">
           <a class="contacts__link" href="#">
             <img class="contacts__link-icon" src="img/pinterest-icon.svg" width="15" height="15" alt="Pinterest icon">
-           Pinterest
+            <span>Pinterest</span>
           </a>
         </li>
         <li class="contacts__item contacts__item--twitter">
           <a class="contacts__link" href="#">
             <img class="contacts__link-icon" src="img/twitter-icon.svg" width="15" height="13" alt="Twitter icon">
-            Twitter
+            <span>Twitter</span>
           </a>
         </li>
       </ul>
