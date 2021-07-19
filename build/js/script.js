@@ -14,6 +14,13 @@ if (headerToggle) {
   });
 }
 
+document.addEventListener('keydown', function (evt) {
+  if (evt.key === ESC_KEY && pageHeader.classList.contains('page-header--opened')) {
+    pageHeader.classList.remove('page-header--opened');
+    pageBody.classList.remove('page-body--opened');
+  }
+});
+
 const swiper = new Swiper('.swiper-container', {
   // Default parameters
   slidesPerView: 1,
@@ -55,37 +62,38 @@ if (popup) {
   var popupClose = popup.querySelector('.cart-popup__button-cross');
   var overlay = document.querySelector('.overlay');
 
-  var onPopupEscPress = function (evt) {
+  var onCartPopupEscPress = function (evt) {
     if (evt.key === ESC_KEY) {
-      closePopup();
+      closeCartPopup();
     }
   };
 
   var openPopup = function () {
     popup.classList.remove('cart-popup--hidden');
     overlay.classList.remove('overlay--hidden');
-    pageBody.classList.add('page-body--opened');
-    document.addEventListener('keydown', onPopupEscPress);
+    pageBody.classList.add('page-body--modal-opened');
+    document.addEventListener('keydown', onCartPopupEscPress);
   };
 
-  var closePopup = function () {
+  var closeCartPopup = function () {
     popup.classList.add('cart-popup--hidden');
     overlay.classList.add('overlay--hidden');
-    pageBody.classList.remove('page-body--opened');
-    document.removeEventListener('keydown', onPopupEscPress);
+    pageBody.classList.remove('page-body--modal-opened');
+    document.removeEventListener('keydown', onCartPopupEscPress);
   };
 
   popupOpen.addEventListener('click', openPopup);
 
-  popupClose.addEventListener('click', closePopup);
+  popupClose.addEventListener('click', closeCartPopup);
 
-  overlay.addEventListener('click', closePopup);
+  overlay.addEventListener('click', closeCartPopup);
 };
 
 var login = document.querySelector('.login-popup');
 
 if (login) {
   var popupOpen = document.querySelector('.page-header__login-link');
+  var popupOpenMobile = document.querySelector('.main-nav__login');
   var popupClose = login.querySelector('.login-popup__button-close');
   var overlay = document.querySelector('.overlay');
 
@@ -99,18 +107,20 @@ if (login) {
     evt.preventDefault();
     login.classList.remove('login-popup--hidden');
     overlay.classList.remove('overlay--hidden');
-    pageBody.classList.add('page-body--opened');
+    pageBody.classList.add('page-body--modal-opened');
     document.addEventListener('keydown', onPopupEscPress);
    };
 
   var closePopup = function () {
     login.classList.add('login-popup--hidden');
     overlay.classList.add('overlay--hidden');
-    pageBody.classList.remove('page-body--opened');
+    pageBody.classList.remove('page-body--modal-opened');
     document.removeEventListener('keydown', onPopupEscPress);
   };
 
   popupOpen.addEventListener('click', openPopup);
+
+  popupOpenMobile.addEventListener('click', openPopup);
 
   popupClose.addEventListener('click', closePopup);
 
@@ -133,14 +143,14 @@ if (filter) {
   var openPopup = function () {
     filter.classList.add('filter--open');
     overlay.classList.remove('overlay--hidden');
-    pageBody.classList.add('page-body--opened');
+    pageBody.classList.add('page-body--modal-opened');
     document.addEventListener('keydown', onPopupEscPress);
   };
 
   var closePopup = function () {
     filter.classList.remove('filter--open');
     overlay.classList.add('overlay--hidden');
-    pageBody.classList.remove('page-body--opened');
+    pageBody.classList.remove('page-body--modal-opened');
     document.removeEventListener('keydown', onPopupEscPress);
   };
 

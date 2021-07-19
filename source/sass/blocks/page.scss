@@ -42,3 +42,13 @@ img {
   height: 100vh;
   overflow: auto;
 }
+
+.page-body--modal-opened {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page-body--modal-opened .page-header {
+  height: 100vh;
+  overflow: auto;
+}
