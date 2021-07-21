@@ -71,14 +71,12 @@ if (popup) {
   var openPopup = function () {
     popup.classList.remove('cart-popup--hidden');
     overlay.classList.remove('overlay--hidden');
-    pageBody.classList.add('page-body--modal-opened');
     document.addEventListener('keydown', onCartPopupEscPress);
   };
 
   var closeCartPopup = function () {
     popup.classList.add('cart-popup--hidden');
     overlay.classList.add('overlay--hidden');
-    pageBody.classList.remove('page-body--modal-opened');
     document.removeEventListener('keydown', onCartPopupEscPress);
   };
 
