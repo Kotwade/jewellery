@@ -2,12 +2,16 @@
   position: relative;
   padding-top: 121px;
   padding-bottom: 152px;
-  max-width: 1170px;
+  max-width: 1210px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (max-width: $desktop-width) {
     padding-bottom: 92px;
     padding-top: 70px;
     max-width: 678px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (max-width: $tablet-width) {
@@ -133,6 +137,10 @@
   background-color: $white;
   margin-right: 7px;
   cursor: pointer;
+
+  &:hover {
+    color: $brown;
+  }
 }
 
 .swiper-pagination-bullet-active {
@@ -141,13 +149,17 @@
 
 .swiper-button-prev {
   position: absolute;
-  left: 0;
+  left: 20px;
   top: 164px;
   background-image: url("../img/arrow-left-icon.svg");
   background-repeat: no-repeat;
   width: 29px;
   height: 10px;
   cursor: pointer;
+
+  &:hover {
+    background-color: $light-grey;
+  }
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -164,13 +176,17 @@
 
 .swiper-button-next {
   position: absolute;
-  right: 0;
+  right: 20px;
   top: 164px;
   background-image: url("../img/arrow-right-icon.svg");
   background-repeat: no-repeat;
   width: 29px;
   height: 10px;
   cursor: pointer;
+
+  &:hover {
+    background-color: $light-grey;
+  }
 
   @media (max-width: $tablet-width) {
     display: none;

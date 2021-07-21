@@ -14,11 +14,13 @@
 }
 
 .page-footer__wrapper {
-  max-width: 1170px;
+  max-width: 1210px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (max-width: $desktop-width) {
     padding-left: 45px;
@@ -117,6 +119,14 @@
   padding-right: 42px;
   background-color: transparent;
   cursor: pointer;
+
+  &:hover {
+    color: $brown;
+  }
+
+  &:active {
+    color: $grey;
+  }
 
   &::after {
     content: "";

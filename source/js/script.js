@@ -97,9 +97,9 @@ if (login) {
   var popupClose = login.querySelector('.login-popup__button-close');
   var overlay = document.querySelector('.overlay');
 
-  var onPopupEscPress = function (evt) {
+  var onLoginPopupEscPress = function (evt) {
     if (evt.key === ESC_KEY) {
-      closePopup();
+      closeLoginPopup();
     }
   };
 
@@ -108,23 +108,23 @@ if (login) {
     login.classList.remove('login-popup--hidden');
     overlay.classList.remove('overlay--hidden');
     pageBody.classList.add('page-body--modal-opened');
-    document.addEventListener('keydown', onPopupEscPress);
+    document.addEventListener('keydown', onLoginPopupEscPress);
    };
 
-  var closePopup = function () {
+  var closeLoginPopup = function () {
     login.classList.add('login-popup--hidden');
     overlay.classList.add('overlay--hidden');
     pageBody.classList.remove('page-body--modal-opened');
-    document.removeEventListener('keydown', onPopupEscPress);
+    document.removeEventListener('keydown', onLoginPopupEscPress);
   };
 
   popupOpen.addEventListener('click', openPopup);
 
   popupOpenMobile.addEventListener('click', openPopup);
 
-  popupClose.addEventListener('click', closePopup);
+  popupClose.addEventListener('click', closeLoginPopup);
 
-  overlay.addEventListener('click', closePopup);
+  overlay.addEventListener('click', closeLoginPopup);
 }
 
 var filter = document.querySelector('.filter');

@@ -44,18 +44,20 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 98px;
+  width: 138px;
   margin: 0;
   padding: 0;
-  margin-left: 318px;
+  margin-left: 298px;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (max-width: $desktop-width) {
-    margin-left: 222px;
+    margin-left: 202px;
   }
 
   @media (max-width: $tablet-width) {
-    width: 137px;
+    width: 177px;
     margin: 0 auto;
   }
 }

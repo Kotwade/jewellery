@@ -45,8 +45,8 @@
   color: $dark;
   padding-top: 23px;
   padding-left: 25px;
-  padding-right: 100px;
-  padding-bottom: 13px;
+  width: 200px;
+  padding-bottom: 22px;
   margin-bottom: 0;
 
   &::after {
@@ -76,6 +76,7 @@
   padding: 0;
   padding-left: 58px;
   padding-bottom: 26px;
+  margin-top: -9px;
 }
 
 .filter__list-item label {

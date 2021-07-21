@@ -2,9 +2,33 @@
   text-decoration: none;
   margin-bottom: 36px;
 
+  &:hover {
+    box-shadow: 3px 3px 3px rgba($brown, 0.5);
+  }
+
+  &:active {
+    box-shadow: 3px 3px 3px rgba($black, 0.5);
+  }
+
   @media (max-width: $tablet-width) {
     margin-bottom: 26px;
   }
+}
+
+.product-item:hover p {
+  color: $brown;
+}
+
+.product-item:hover span {
+  color: $brown;
+}
+
+.product-item:active p {
+  color: $grey;
+}
+
+.product-item:active span {
+  color: $grey;
 }
 
 .product-item img {

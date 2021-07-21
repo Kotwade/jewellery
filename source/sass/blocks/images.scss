@@ -45,7 +45,9 @@
 }
 
 .images__container {
-  max-width: 1170px;
+  max-width: 1210px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 230px 399px 230px 230px;
@@ -55,6 +57,8 @@
     max-width: 678px;
     grid-template-columns: 133px 231px 133px 133px;
     gap: 20px 16px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (max-width: $tablet-width) {
