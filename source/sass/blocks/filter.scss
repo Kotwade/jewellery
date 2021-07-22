@@ -40,12 +40,13 @@
 }
 
 .filter__legend {
+  position: relative;
   font-size: 16px;
   line-height: 21px;
   color: $dark;
   padding-top: 23px;
   padding-left: 25px;
-  width: 200px;
+  width: 100%;
   padding-bottom: 22px;
   margin-bottom: 0;
 

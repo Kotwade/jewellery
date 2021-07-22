@@ -42,7 +42,6 @@
 }
 
 .faq__wrapper {
-  position: relative;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid $brown;
@@ -69,6 +68,10 @@
   @media (max-width: $tablet-width) {
     padding-bottom: 6px;
   }
+}
+
+.faq__text {
+  width: 100%;
 }
 
 .faq__text p {

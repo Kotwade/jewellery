@@ -19,11 +19,13 @@
   <header class="page-header page-header--nojs">
     <div class="page-header__wrapper">
       <button class="page-header__toggle" type="button"></button>
-      <form class="page-header__form" method="POST" action="https://echo.htmlacademy.ru">
-        <label>
-          <input type="search" placeholder="Type here to search">
-        </label>
-      </form>
+      <div class="page-header__form">
+        <form method="POST" action="https://echo.htmlacademy.ru">
+          <label>
+            <input type="search" placeholder="Type here to search">
+          </label>
+        </form>
+      </div>
       <a class="page-header__logo" href="index.html">
         <svg class="page-header__logo-icon" width="66" height="66">
           <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
@@ -34,9 +36,11 @@
           <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
         </svg>
       </a>
-      <div class="page-header__login">
-        <a class="page-header__login-link" href="login.html">Login</a>
-        <a class="page-header__cart-link" href="#">Cart 0</a>
+      <div class="page-header__login-wrapper">
+        <div class="page-header__login">
+          <a class="page-header__login-link" href="login.html">Login</a>
+          <a class="page-header__cart-link" href="#">Cart 0</a>
+        </div>
       </div>
     </div>
     <nav class="main-nav">
@@ -69,82 +73,84 @@
     <button class="catalog-button" type="button">Filter</button>
     <section class="catalog-main">
       <h2 class="visually-hidden">Catalog</h2>
-      <form class="catalog-main__filter filter" method="POST" action="https://echo.htmlacademy.ru">
-        <div class="filter__container">
-          <fieldset class="filter__item accordion">
-            <legend class="filter__legend accordion__toggle">
-              Product
-            </legend>
-            <ul class="filter__list accordion__pane">
-              <li class="filter__list-item">
-                <input class="visually-hidden" type="checkbox" id="filter__necklaces">
-                <label for="filter__necklaces">Necklaces</label>
-              </li>
-              <li class="filter__list-item">
-                <input class="visually-hidden" type="checkbox" id="filter__chokers">
-                <label for="filter__chokers">Chokers</label>
-              </li>
-              <li class="filter__list-item">
-                <input class="visually-hidden" type="checkbox" id="filter__rings">
-                <label for="filter__rings">Rings</label>
-              </li>
-              <li class="filter__list-item">
-                <input class="visually-hidden" type="checkbox" id="filter__earrings">
-                <label for="filter__earrings">Earrings</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filter__item accordion">
-            <legend class="filter__legend filter__legend--second accordion__toggle">
-              Material
-            </legend>
-            <ul class="filter__list accordion__pane">
-              <li class="filter__list-item">
-                <input class="visually-hidden" type="checkbox" id="filter__gold">
-                <label for="filter__gold">Gold</label>
-              </li>
-              <li class="filter__list-item">
-                <input class="visually-hidden" type="checkbox" id="filter__silver">
-                <label for="filter__silver">Silver</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filter__item accordion">
-            <legend class="filter__legend filter__legend--second accordion__toggle">
-              Collection
-            </legend>
-            <ul class="filter__list accordion__pane">
-              <li class="filter__list-item">
-                <input class="visually-hidden" type="checkbox" id="filter__pink-flamingo">
-                <label for="filter__pink-flamingo">Pink flamingo</label>
-              </li>
-              <li class="filter__list-item">
-                <input class="visually-hidden" type="checkbox" id="filter__dreams">
-                <label for="filter__dreams">Dreams</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filter__item accordion">
-            <legend class="filter__legend filter__legend--second accordion__toggle">Price</legend>
-            <div class="filter__range accordion__pane">
-              <div class="filter__range-controls">
-                <div class="filter__scale">
-                  <div class="filter__bar"></div>
+      <div class="catalog-main__filter filter">
+        <form method="POST" action="https://echo.htmlacademy.ru">
+          <div class="filter__container">
+            <fieldset class="filter__item accordion">
+              <legend class="filter__legend accordion__toggle">
+                Product
+              </legend>
+              <ul class="filter__list accordion__pane">
+                <li class="filter__list-item">
+                  <input class="visually-hidden" type="checkbox" id="filter__necklaces">
+                  <label for="filter__necklaces">Necklaces</label>
+                </li>
+                <li class="filter__list-item">
+                  <input class="visually-hidden" type="checkbox" id="filter__chokers">
+                  <label for="filter__chokers">Chokers</label>
+                </li>
+                <li class="filter__list-item">
+                  <input class="visually-hidden" type="checkbox" id="filter__rings">
+                  <label for="filter__rings">Rings</label>
+                </li>
+                <li class="filter__list-item">
+                  <input class="visually-hidden" type="checkbox" id="filter__earrings">
+                  <label for="filter__earrings">Earrings</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter__item accordion">
+              <legend class="filter__legend filter__legend--second accordion__toggle">
+                Material
+              </legend>
+              <ul class="filter__list accordion__pane">
+                <li class="filter__list-item">
+                  <input class="visually-hidden" type="checkbox" id="filter__gold">
+                  <label for="filter__gold">Gold</label>
+                </li>
+                <li class="filter__list-item">
+                  <input class="visually-hidden" type="checkbox" id="filter__silver">
+                  <label for="filter__silver">Silver</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter__item accordion">
+              <legend class="filter__legend filter__legend--second accordion__toggle">
+                Collection
+              </legend>
+              <ul class="filter__list accordion__pane">
+                <li class="filter__list-item">
+                  <input class="visually-hidden" type="checkbox" id="filter__pink-flamingo">
+                  <label for="filter__pink-flamingo">Pink flamingo</label>
+                </li>
+                <li class="filter__list-item">
+                  <input class="visually-hidden" type="checkbox" id="filter__dreams">
+                  <label for="filter__dreams">Dreams</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter__item accordion">
+              <legend class="filter__legend filter__legend--second accordion__toggle">Price</legend>
+              <div class="filter__range accordion__pane">
+                <div class="filter__range-controls">
+                  <div class="filter__scale">
+                    <div class="filter__bar"></div>
+                  </div>
+                  <div class="filter__toggle filter__toggle--min" tabindex="0"></div>
+                  <div class="filter__toggle filter__toggle--max" tabindex="0"></div>
                 </div>
-                <div class="filter__toggle filter__toggle--min" tabindex="0"></div>
-                <div class="filter__toggle filter__toggle--max" tabindex="0"></div>
+                <div class="filter__range-price">
+                  <span>$ 55</span>
+                  <span>$ 155</span>
+                </div>
               </div>
-              <div class="filter__range-price">
-                <span>$ 55</span>
-                <span>$ 155</span>
-              </div>
-            </div>
-          </fieldset>
-        </div>
-        <button class="filter__button filter__button--apply" type="submit">Apply</button>
-        <button class="filter__button filter__button--clear" type="reset">Clear All</button>
-        <button class="filter__button-close" type="button"></button>
-      </form>
+            </fieldset>
+          </div>
+          <button class="filter__button filter__button--apply" type="submit">Apply</button>
+          <button class="filter__button filter__button--clear" type="reset">Clear All</button>
+          <button class="filter__button-close" type="button"></button>
+        </form>
+      </div>
       <div class="catalog-main__wrapper">
         <a class="product-item product-item--catalog" href="product.html">
           <picture>
@@ -270,21 +276,23 @@
       </div>
     </div>
     <section class="login-popup login-popup--hidden">
-      <form class="login-popup__form" method="POST" action="https://echo.htmlacademy.ru">
-        <h3>Log In</h3>
-        <label>
-          <input type="email" placeholder="Your E-mail">
-        </label>
-        <label>
-          <input type="password" placeholder="Password">
-        </label>
-        <a class="login-popup__link" href="#">Forgot your password?</a>
-        <button class="login-popup__button" type="button">Log In</button>
-        <div class="login-popup__text">
-          <p>Don’t have an account?</p>
-          <span>Sign up</span>
-        </div>
-      </form>
+      <div class="login-popup__form">
+        <form method="POST" action="https://echo.htmlacademy.ru">
+          <h3>Log In</h3>
+          <label>
+            <input type="email" placeholder="Your E-mail">
+          </label>
+          <label>
+            <input type="password" placeholder="Password">
+          </label>
+          <a class="login-popup__link" href="#">Forgot your password?</a>
+          <button class="login-popup__button" type="submit">Log In</button>
+          <div class="login-popup__text">
+            <p>Don’t have an account?</p>
+            <span>Sign up</span>
+          </div>
+        </form>
+      </div>
       <button class="login-popup__button-close" type="button"></button>
     </section>
   </main>
@@ -293,12 +301,14 @@
       <div class="page-footer__title">
         <h3>The good stuff in your inbox</h3>
         <p>News and updates from CH. No spam, we promise.</p>
-        <form class="page-footer__form" method="POST" action="https://echo.htmlacademy.ru">
-          <label>
-            <input type="email" placeholder="Your E-mail">
-          </label>
-          <button class="page-footer__form-button" type="submit">Sign&nbsp;Up</button>
-        </form>
+        <div class="page-footer__form">
+          <form method="POST" action="https://echo.htmlacademy.ru">
+            <label>
+              <input type="email" placeholder="Your E-mail">
+            </label>
+            <button class="page-footer__form-button" type="submit">Sign&nbsp;Up</button>
+          </form>
+        </div>
       </div>
       <div class="page-footer__container">
         <ul class="page-footer__list">

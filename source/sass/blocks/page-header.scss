@@ -77,7 +77,7 @@
 }
 
 .page-header__logo {
-  margin-left: 362px;
+  margin-left: auto;
   margin-right: auto;
 
   @media (max-width: $desktop-width) {
@@ -98,10 +98,19 @@
   fill: $white;
 }
 
+.page-header__login-wrapper {
+  width: 193px;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .page-header__login {
   display: flex;
   width: 119px;
   justify-content: space-between;
+  margin-left: auto;
 
   @media (max-width: $desktop-width) {
     display: none;
@@ -116,6 +125,7 @@
   margin: 0;
   text-decoration: none;
   padding-top: 12px;
+  display: block;
 
   &:hover {
     color: $brown;
@@ -134,6 +144,7 @@
   margin: 0;
   text-decoration: none;
   padding-top: 12px;
+  display: block;
 
   &:hover {
     color: $brown;
