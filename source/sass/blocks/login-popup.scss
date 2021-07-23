@@ -82,17 +82,14 @@
 }
 
 .login-popup__link {
+  display: block;
+  text-align: right;
   text-decoration: none;
   font-size: 12px;
   line-height: 18px;
   padding: 0;
   margin: 0;
-  padding-left: 202px;
   color: $grey;
-
-  @media (max-width: $tablet-width) {
-    padding-left: 102px;
-  }
 }
 
 .login-popup__button {
@@ -140,12 +137,21 @@
   padding: 0;
 }
 
-.login-popup__text span {
+.login-popup__text a {
+  text-decoration: none;
   font-size: 14px;
   line-height: 21px;
   color: $dark;
   margin: 0;
   padding: 0;
+
+  &:hover {
+    color: $brown;
+  }
+
+  &:active {
+    color: $grey;
+  }
 }
 
 .login-popup__button-close {

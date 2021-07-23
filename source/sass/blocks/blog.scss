@@ -18,7 +18,9 @@
   margin-bottom: 19px;
 }
 
-.blog__title p {
+.blog__title a {
+  display: block;
+  text-decoration: none;
   width: 72px;
   font-size: 16px;
   line-height: 21px;
@@ -29,6 +31,14 @@
   padding-bottom: 4px;
   margin-bottom: 60px;
   border-bottom: 1px solid $brown;
+
+  &:hover {
+    color: $brown;
+  }
+
+  &:active {
+    color: $grey;
+  }
 
   @media (max-width: $tablet-width) {
     margin-bottom: 50px;

@@ -52,7 +52,8 @@
   }
 }
 
-.slider__text p {
+.slider__text a {
+  display: block;
   width: 85px;
   font-size: 16px;
   line-height: 21px;
@@ -62,6 +63,15 @@
   padding: 0;
   margin-bottom: 58px;
   border-bottom: 1px solid $brown;
+  text-decoration: none;
+
+  &:hover {
+    color: $brown;
+  }
+
+  &:active {
+    color: $grey;
+  }
 
   @media (max-width: $desktop-width) {
     margin-bottom: 54px;
@@ -161,6 +171,11 @@
     background-color: $light-grey;
   }
 
+  @media (max-width: $desktop-width) {
+    left: 0;
+    top: 114px;
+  }
+
   @media (max-width: $tablet-width) {
     display: none;
   }
@@ -186,6 +201,11 @@
 
   &:hover {
     background-color: $light-grey;
+  }
+
+  @media (max-width: $desktop-width) {
+    right: 0;
+    top: 114px;
   }
 
   @media (max-width: $tablet-width) {

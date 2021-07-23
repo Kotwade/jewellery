@@ -27,7 +27,9 @@
   }
 }
 
-.images p {
+.images a {
+  display: block;
+  text-decoration: none;
   width: 76px;
   font-size: 16px;
   line-height: 21px;
@@ -38,6 +40,14 @@
   margin-bottom: 60px;
   border-bottom: 1px solid $brown;
   padding-bottom: 4px;
+
+  &:hover {
+    color: $brown;
+  }
+
+  &:active {
+    color: $grey;
+  }
 
   @media (max-width: $tablet-width) {
     margin-bottom: 46px;

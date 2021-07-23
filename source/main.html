@@ -26,7 +26,7 @@
           </label>
         </form>
       </div>
-      <a class="page-header__logo" href="main.html">
+      <a class="page-header__logo">
         <svg class="page-header__logo-icon" width="66" height="66">
           <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
         </svg>
@@ -43,11 +43,11 @@
         </div>
       </div>
     </div>
-    <nav class="main-nav main-nav--product">
+    <nav class="main-nav">
       <label>
         <input type="text">
       </label>
-      <ul class="main-nav__list site-list site-list--product">
+      <ul class="main-nav__list site-list">
         <li><a class="site-list__link" href="#">What’s new</a></li>
         <li><a class="site-list__link" href="catalog.html">Chokers</a></li>
         <li><a class="site-list__link" href="catalog.html">Necklaces</a></li>
@@ -63,63 +63,17 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Page of product, Jewellery - internet shop</h1>
-    <section class="info">
-      <div class="info__wrapper">
-        <div class="info__image">
-          <picture>
-            <source type="image/webp" srcset="img/gold-necklace-for-women.webp 1x, img/gold-necklace-for-women@2x.webp 2x">
-            <!-- 1x: 100px; 2x: 200px -->
-            <img src="img/gold-necklace-for-women.jpg" srcset="img/gold-necklace-for-women@2x.jpg 2x" width="100" height="125" alt="Photo gold necklace for women">
-          </picture>
-          <picture>
-            <source type="image/webp" srcset="img/pretty-gold-necklace.webp 1x, img/pretty-gold-necklace@2x.webp 2x">
-            <!-- 1x: 100px; 2x: 200px -->
-            <img src="img/pretty-gold-necklace.jpg" srcset="img/pretty-gold-necklace@2x.jpg 2x" width="100" height="125" alt="Photo pretty gold necklace">
-          </picture>
-          <picture>
-            <source type="image/webp" srcset="img/womens-necklace-set.webp 1x, img/womens-necklace-set@2x.webp 2x">
-            <!-- 1x: 100px; 2x: 200px -->
-            <img src="img/womens-necklace-set.jpg" srcset="img/womens-necklace-set@2x.jpg 2x" width="100" height="125" alt="Photo womens necklace set">
-          </picture>
-        </div>
-        <picture>
-          <source type="image/webp" srcset="img/necklace-detail.webp 1x, img/necklace-detail@2x.webp 2x">
-          <!-- 1x: 470px; 2x: 940px -->
-          <img class="info__detail" src="img/necklace-detail.jpg" srcset="img/necklace-detail@2x.jpg 2x" width="470" height="435" alt="Photo necklace detail">
-        </picture>
-      </div>
-      <div class="info__container">
-        <h2>Gold Necklace</h2>
-        <p>$ 115</p>
-        <div class="info__link-wrapper">
-          <a class="info__link" href="#">Deacription</a>
-          <a class="info__link info__link--active" href="#">Additional info</a>
-        </div>
-        <div class="info__additional">
-          <p>Metal type</p>
-          <p>Gold 585</p>
-        </div>
-        <div class="info__additional">
-          <p>Stone</p>
-          <p>Turquoise</p>
-        </div>
-        <div class="info__additional">
-          <p>Size</p>
-          <p>18” / 20”</p>
-        </div>
-        <button class="info__button" type="button">Add to cart</button>
-        <div class="info__special-offer">
-          <p>14 Day Returns</p>
-          <p>2-Year Warranty</p>
-          <p>Free Shipping</p>
-        </div>
+    <h1 class="visually-hidden">Jewellery - internet shop</h1>
+    <section class="main-title">
+      <div class="main-title__wrapper">
+        <h2>perfection</h2>
+        <p>made to be yours</p>
       </div>
     </section>
-    <section class="slider slider--product swiper-container">
-      <div class="slider__text slider__text--product">
-        <h3>You May Also Like</h3>
-        <p>Shop Now</p>
+    <section class="slider swiper-container">
+      <div class="slider__text">
+        <h3>New In</h3>
+        <a href="#">Shop Now</a>
       </div>
       <div class="slider__wrapper swiper-wrapper">
         <a class="slider__item product-item swiper-slide" href="product.html">
@@ -231,35 +185,133 @@
           <span>$ 145</span>
         </a>
       </div>
-      <div class="swiper-button-prev slider-button-prev-product"></div>
-      <div class="swiper-button-next slider-button-next-product"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
       <div class="swiper-pagination"></div>
     </section>
-    <section class="cart-popup cart-popup--hidden">
-      <h3>The item was added to your cart</h3>
-      <div class="cart-popup__container">
-        <div class="cart-popup__wrapper">
-          <img src="img/necklace-detail-popup.jpg" width="84" height="79" alt="Photo necklace detail">
-          <div class="cart-popup__price">
-            <p>Gold Necklace </p>
-            <span>$ 115</span>
-          </div>
-          <div class="cart-popup__count">
-            <button class="cart-popup__count-button" type="button">+</button>
-            <span>1</span>
-            <button class="cart-popup__count-button cart-popup__count-button--minus" type="button">-</button>
-          </div>
+    <section class="blog">
+      <div class="blog__title">
+        <h3>Blog</h3>
+        <a href="#">Read All</a>
+      </div>
+      <div class="blog__container">
+        <div class="blog__wrapper">
+          <article class="blog__item">
+            <picture>
+              <source type="image/webp" srcset="img/jess-harper.webp 1x, img/jess-harper@2x.webp 2x">
+              <!-- 1x: 285px; 2x: 570px -->
+              <img src="img/jess-harper.jpg" srcset="img/jess-harper@2x.jpg 2x" width="285" height="300" alt="Photo Jess Harper">
+            </picture>
+            <div class="blog__text">
+              <span>September 30, 2019</span>
+              <h3>How to care for<br>your jewellery</h3>
+              <a href="#">Read Article</a>
+            </div>
+          </article>
+          <article class="blog__item">
+            <div class="blog__text">
+              <span>September 23, 2019</span>
+              <h3>Power of<br>crystals</h3>
+              <a href="#">Read Article</a>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="img/alex-holyoake.webp 1x, img/alex-holyoake@2x.webp 2x">
+              <!-- 1x: 285px; 2x: 570px -->
+              <img src="img/alex-holyoake.jpg" srcset="img/alex-holyoake@2x.jpg 2x" width="285" height="300" alt="Photo Alex Holyoake">
+            </picture>
+          </article>
         </div>
-        <div class="cart-popup__text">
-          <p>You have 1 item in the cart</p>
-          <span>Cart subtotal: $ 115</span>
-        </div>
-        <div class="cart-popup__buttons">
-          <a class="cart-popup__shopping" href="catalog.html">Continue shopping</a>
-          <button class="cart-popup__checkout" type="button">Checkout</button>
+        <div class="blog__wrapper blog__wrapper--box">
+          <article class="blog__item">
+            <picture>
+              <source type="image/webp" srcset="img/alve-odonnell.webp 1x, img/alve-odonnell@2x.webp 2x">
+              <!-- 1x: 570px; 2x: 1140px -->
+              <img src="img/alve-odonnell.jpg" srcset="img/alve-odonnell@2x.jpg 2x" width="570" height="630" alt="Photo Alve Odonnell">
+            </picture>
+            <div class="blog__text blog__text--box">
+              <span>September 16, 2019</span>
+              <h3>AW 19 trends</h3>
+              <a href="#">Read Article</a>
+            </div>
+          </article>
         </div>
       </div>
-      <button class="cart-popup__button-cross" type="button"></button>
+    </section>
+    <section class="faq">
+      <h3>Frequently asked questions</h3>
+      <div class="faq__container">
+        <div class="faq__wrapper">
+          <div class="faq__text accordion">
+            <button class="accordion__toggle" type="button"><span>What materials are the jewellery made of?</span></button>
+            <p class="accordion__pane">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          </div>
+        </div>
+        <div class="faq__wrapper faq__wrapper--tablet">
+          <div class="faq__text accordion">
+            <button class="accordion__toggle" type="button"><span>Which countries do you deliver to?</span></button>
+            <p class="accordion__pane">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          </div>
+        </div>
+        <div class="faq__wrapper faq__wrapper--tablet">
+          <div class="faq__text accordion">
+            <button class="accordion__toggle" type="button"><span>What are the payment methods?</span></button>
+            <p class="accordion__pane">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          </div>
+        </div>
+        <div class="faq__wrapper faq__wrapper--tablet">
+          <div class="faq__text accordion">
+            <button class="accordion__toggle" type="button"><span>Can I return the jewellery if it didn’t fit me?</span></button>
+            <p class="accordion__pane">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="images">
+      <h3>@Chjewellery</h3>
+      <a href="#">Follow Us</a>
+      <div class="images__container">
+        <picture>
+          <source type="image/webp" srcset="img/inst.webp 1x, img/inst@2x.webp 2x">
+          <!-- 1x: 230px; 2x: 460px -->
+          <img class="images__block-first" src="img/inst.jpg" srcset="img/inst@2x.jpg 2x" width="230" height="230" alt="Photo earrings on notebook">
+        </picture>
+        <div class="images__pictures images__pictures--bigger">
+          <picture>
+            <source type="image/webp" srcset="img/model.webp 1x, img/model@2x.webp 2x">
+            <!-- 1x: 399px; 2x: 798px -->
+            <img class="images__model" src="img/model.jpg" srcset="img/model@2x.jpg 2x" width="399" height="412" alt="Photo earrings on model">
+          </picture>
+        </div>
+        <div class="images__pictures images__pictures--first">
+          <picture>
+            <source type="image/webp" srcset="img/hand.webp 1x, img/hand@2x.webp 2x">
+            <!-- 1x: 230px; 2x: 460px -->
+            <img class="images__block-first images__block-first--hand" src="img/hand.jpg" srcset="img/hand@2x.jpg 2x" width="230" height="230" alt="Photo ring on hand">
+          </picture>
+        </div>
+        <div class="images__pictures images__pictures--first">
+          <picture>
+            <source type="image/webp" srcset="img/rings.webp 1x, img/rings@2x.webp 2x">
+            <!-- 1x: 230px; 2x: 460px -->
+            <img class="images__block-first images__block-first--rings" src="img/rings.jpg" srcset="img/rings@2x.jpg 2x" width="230" height="230" alt="Photo rings">
+          </picture>
+        </div>
+        <picture>
+          <source type="image/webp" srcset="img/earrings.webp 1x, img/earrings@2x.webp 2x">
+          <!-- 1x: 230px; 2x: 460px -->
+          <img class="images__block-second" src="img/earrings.jpg" srcset="img/earrings@2x.jpg 2x" width="230" height="150" alt="Photo earrings">
+        </picture>
+        <picture>
+          <source type="image/webp" srcset="img/set.webp 1x, img/set@2x.webp 2x">
+          <!-- 1x: 230px; 2x: 460px -->
+          <img class="images__block-second images__block-second--set" src="img/set.jpg" srcset="img/set@2x.jpg 2x" width="230" height="150" alt="Photo set of jewellery">
+        </picture>
+        <picture>
+          <source type="image/webp" srcset="img/rings-on-hands.webp 1x, img/rings-on-hands@2x.webp 2x">
+          <!-- 1x: 230px; 2x: 460px -->
+          <img class="images__block-second" src="img/rings-on-hands.jpg" srcset="img/rings-on-hands@2x.jpg 2x" width="230" height="150" alt="Photo rings on hands">
+        </picture>
+      </div>
     </section>
     <section class="login-popup login-popup--hidden">
       <div class="login-popup__form">
