@@ -37,6 +37,20 @@
   }
 }
 
+.info__wrapper span {
+  display: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    margin-top: -64px;
+    margin-bottom: 45px;
+  }
+}
+
 .info__image {
   max-width: 100px;
   display: flex;

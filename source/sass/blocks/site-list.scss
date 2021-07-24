@@ -14,6 +14,11 @@
     padding-left: 45px;
     margin-top: 48px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 38px;
+    padding-left: 15px;
+  }
 }
 
 .site-list--product {

@@ -108,7 +108,7 @@
 
 .page-header__login {
   display: flex;
-  width: 119px;
+  width: 128px;
   justify-content: space-between;
   margin-left: auto;
 
@@ -126,6 +126,8 @@
   text-decoration: none;
   padding-top: 12px;
   display: block;
+  padding-right: 10px;
+  padding-left: 10px;
 
   &:hover {
     color: $brown;
@@ -145,6 +147,8 @@
   text-decoration: none;
   padding-top: 12px;
   display: block;
+  padding-right: 10px;
+  padding-left: 10px;
 
   &:hover {
     color: $brown;

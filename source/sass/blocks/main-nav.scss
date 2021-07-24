@@ -11,6 +11,10 @@
   border-bottom: 1px solid $border-grey;
 }
 
+.page-header--opened .main-nav--product {
+  border: 0;
+}
+
 .page-header--opened .main-nav {
   @media (max-width: $desktop-width) {
     display: block;
@@ -36,6 +40,10 @@
     left: 57px;
     background-image: url("../img/loup-white.svg");
     background-repeat: no-repeat;
+
+    @media (max-width: $tablet-width) {
+      left: 27px;
+    }
   }
 
   @media (max-width: $desktop-width) {
@@ -43,6 +51,10 @@
     padding: 0;
     padding-left: 45px;
     padding-right: 45px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 15px;
   }
 }
 
@@ -68,6 +80,11 @@
     border-radius: 21px;
     border: none;
     margin-top: 12px;
+    padding-left: 35px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
   }
 }
 
@@ -78,6 +95,11 @@
   padding: 0;
   padding-left: 45px;
   margin-top: 33px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 22px;
+    padding-left: 15px;
+  }
 }
 
 .main-nav__menu li {
@@ -111,6 +133,12 @@
   text-decoration: none;
   color: $white;
   margin-top: 44px;
+  padding-bottom: 40px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 36px;
+    padding-left: 15px;
+  }
 }
 
 .page-header--opened .main-nav__login {
