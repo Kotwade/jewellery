@@ -178,6 +178,7 @@
 
 .info__button {
   width: 100%;
+  display: block;
   background-color: $brown;
   color: $white;
   font-family: "Poppins", "Arial", sans-serif;
@@ -188,7 +189,7 @@
   padding-top: 23px;
   padding-bottom: 23px;
   margin-bottom: 21px;
-  margin-top: 39px;
+  margin-top: 51px;
   border: none;
   text-align: center;
   cursor: pointer;
@@ -202,7 +203,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-top: 26px;
+    margin-top: 39px;
     margin-bottom: 15px;
   }
 }
