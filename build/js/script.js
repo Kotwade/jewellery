@@ -175,7 +175,7 @@ var showPane = function (button, pane) {
 };
 
 var toggleAccordion = function (evt) {
-  var button = evt.target;
+  var button = evt.currentTarget;
   var accordionPane = button.nextElementSibling;
 
   if (button.classList.contains('accordion__toggle--inactive')) {
