@@ -86,6 +86,14 @@
   line-height: 18px;
   color: $dark;
   cursor: pointer;
+
+  &:hover {
+    color: $brown;
+  }
+
+  &:active {
+    color: $grey;
+  }
 }
 
 .filter__list-item input + label::before {
@@ -97,6 +105,10 @@
   width: 15px;
   height: 15px;
   background-color: transparent;
+}
+
+.filter__list-item input:focus + label::before {
+  outline: 1px dashed $black;
 }
 
 .filter__list-item input:checked + label::after {

@@ -44,6 +44,11 @@
   }
 }
 
+.login-popup__form form {
+  display: flex;
+  flex-direction: column;
+}
+
 .login-popup__form h3 {
   font-family: "Cormorant Garamond", "Georgia", serif;
   font-weight: 700;
@@ -90,6 +95,7 @@
   padding: 0;
   margin: 0;
   color: $grey;
+  align-self: flex-end;
 }
 
 .login-popup__button {
@@ -156,13 +162,14 @@
 
 .login-popup__button-close {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 14px;
-  height: 14px;
+  top: 0;
+  right: 0;
+  width: 54px;
+  height: 54px;
   background-image: url("../img/cross-icon.svg");
   background-repeat: no-repeat;
   background-color: transparent;
+  background-position: center;
   border: none;
   cursor: pointer;
 }

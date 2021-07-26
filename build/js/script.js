@@ -59,6 +59,7 @@ var popup = document.querySelector('.cart-popup');
 
 if (popup) {
   var popupOpen = document.querySelector('.info__button');
+  var popupButton = popup.querySelector('.cart-popup__shopping');
   var popupClose = popup.querySelector('.cart-popup__button-cross');
   var overlay = document.querySelector('.overlay');
 
@@ -71,6 +72,7 @@ if (popup) {
   var openPopup = function () {
     popup.classList.remove('cart-popup--hidden');
     overlay.classList.remove('overlay--hidden');
+    popupButton.focus();
     document.addEventListener('keydown', onCartPopupEscPress);
   };
 

@@ -58,12 +58,17 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .blog__wrapper {
   display: flex;
   max-width: 570px;
   flex-direction: column;
+  margin: 0 auto;
 
   @media (max-width: $desktop-width) {
     margin: 0 auto;
@@ -87,10 +92,11 @@
 
 .blog__item img {
   display: block;
+  height: 100%;
+  object-fit: cover;
 
   @media (max-width: $desktop-width) {
     width: 339px;
-    object-fit: cover;
     height: 300px;
   }
 

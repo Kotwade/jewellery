@@ -7,6 +7,8 @@
 
   @media (max-width: $tablet-width) {
     padding-bottom: 36px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -37,7 +39,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 290px;
+    width: 100%;
   }
 }
 
